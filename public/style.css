@@ -3,6 +3,8 @@
    "how to change link color." */
 
 body {
+  background-color: #151515;
+  color: #E4FDE1;
   margin: 0px;
   font-family: Verdana;
 }
@@ -11,12 +13,18 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #371E30;
-  color: white;
+  background-color: #0B3954;
   padding: 10px;
 }
 
-section.content-section{
+section.content-section,
+footer{
+  font-size: 18px;
   padding: 8px;
+  margin: 2px 2px;
   text-align: justify;
+}
+
+a{
+  color: #EC058E;
 }
