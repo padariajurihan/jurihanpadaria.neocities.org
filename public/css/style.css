@@ -16,6 +16,10 @@ header{
   background-color: #0B3954;
   padding: 10px;
 }
+header h1 a{
+  color: #E4FDE1;
+  text-decoration: none;
+}
 
 section.content-section,
 footer{
