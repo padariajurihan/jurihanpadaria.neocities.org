@@ -10,6 +10,7 @@ body {
 }
 
 header{
+  font-family: 'Jersey 25', Verdana;
   display: flex;
   align-items: center;
   justify-content: space-between;
