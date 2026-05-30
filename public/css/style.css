@@ -30,6 +30,12 @@ footer{
   text-align: justify;
 }
 
+footer{
+  font-family: 'Protest Revolution', Verdana;
+  background-color: #0B3954;
+  color: #E4FDE1;
+}
+
 a{
   color: #EC058E;
 }
