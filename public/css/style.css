@@ -9,6 +9,7 @@ body {
   font-family: Verdana;
 }
 
+/* HEADER SECTION */
 header{
   font-family: 'Jersey 25', Verdana;
   display: flex;
@@ -21,10 +22,12 @@ header h1 a{
   color: #E4FDE1;
   text-decoration: none;
 }
+/* HEADER END */
 
-section.content-section h3{
-  font-family: 'Almendra', Verdana;
-  
+
+/* CONTENT SECTION */
+section.content-section{
+  font-family: 'Kode Mono', Verdana;
 }
 
 section.content-section,
@@ -34,6 +37,7 @@ footer{
   margin: 2px 2px;
   text-align: justify;
 }
+/* CONTENT SECTION END */
 
 footer{
   font-family: 'Protest Revolution', Verdana;
