@@ -22,6 +22,11 @@ header h1 a{
   text-decoration: none;
 }
 
+section.content-section h3{
+  font-family: 'Almendra', Verdana;
+  
+}
+
 section.content-section,
 footer{
   font-size: 18px;
