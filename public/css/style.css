@@ -39,6 +39,16 @@ footer{
 }
 /* CONTENT SECTION END */
 
+/* WAIFU LIST STYLE CONFIG */
+.waifu-wiki {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+/* WAIFU LIST STYLE CONFIG END */
+
+
 footer{
   font-family: 'Protest Revolution', Verdana;
   background-color: #0B3954;
