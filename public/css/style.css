@@ -1,8 +1,6 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your HTML content. To learn how to do something, just try searching Google for questions like "how to change link color." */
 
-body {
+body{
   background-color: #151515;
   color: #E4FDE1;
   margin: 0px;
@@ -18,6 +16,7 @@ header{
   background-color: #0B3954;
   padding: 10px;
 }
+
 header h1 a{
   color: #E4FDE1;
   text-decoration: none;
@@ -38,14 +37,205 @@ section.content-section{
 }
 /* CONTENT SECTION END */
 
+
 /* WAIFU LIST STYLE CONFIG */
-.waifu-wiki {
+.waifu-wiki{
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
+
+section.waifu-profile, section.waifu-story, section.waifu-gallery, section.waifu-games{
+  font-family: 'Kode Mono', Verdana;
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid #1B998B;
+}
+
+section.waifu-profile{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.waifu-info{
+  flex: 1 1 48%;
+  min-width: 260px;
+}
+
+.waifu-carousel{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 45%;
+  min-width: 320px;
+  max-width: 480px;
+}
+
+.carousel-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.carousel-content img{
+  width: 100%;
+  max-width: 360px;
+  height: 420px;
+  object-fit: contain;
+  border: 2px solid #1B998B;
+  border-radius: 10px;
+}
+
+.carousel-description{
+  text-align: center;
+}
+
+.carousel-slides{
+  display: none;
+}
+
+.carousel-description h3{
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.carousel-description p{
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.carousel-btn{
+  border: none;
+  background: #1B998B;
+  color: #151515;
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.carousel-btn:hover{
+  transform: scale(1.05);
+  background: #EC058E;
+  color: #ffffff;
+}
+
+@media (max-width: 860px){
+  section.waifu-profile{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .waifu-carousel{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+div.gallery-images{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  font-size: 12px;
+}
+
+div.gallery-images > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+div.gallery-images img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border: 2px solid #1B998B;
+  border-radius: 8px;
+}
+
+div.gallery-images p{
+  margin: 10px 0 0;
+  line-height: 1.4;
+}
+
 /* WAIFU LIST STYLE CONFIG END */
 
+/* COLOR CONFIG */
+.red{
+  color: #E63946;
+}
+.green{
+  color: #09E85E;
+}
+.aqua-blue{
+  color: #0ACDFF;
+}
+.platinum{
+  color: #E5E9EC;
+}
+/* COLOR CONFIG END */
+
+/* DISCORD WIDGET */
+.discord-widget{
+  font-family: 'Kode Mono', Verdana;
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.discord-widget > div:first-child{
+  flex: 1 1 auto;
+  min-width: 300px;
+}
+
+.discord-widget > div:last-child{
+  flex: 0 0 auto;
+  width: 420px;
+}
+
+.discord-widget h2{
+  margin: 0 0 12px;
+}
+
+.discord-widget p{
+  margin: 0;
+  line-height: 1.5;
+}
+
+.discord-widget iframe{
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+@media (max-width: 860px) {
+  .discord-widget{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .discord-widget > div:last-child{
+    width: 100%;
+  }
+}
+/* DISCORD WIDGET END */
 
 footer{
   font-family: 'Protest Revolution', Verdana;
@@ -57,3 +247,68 @@ footer{
 a{
   color: #EC058E;
 }
+
+/* GAMES COVERS SECTION */
+.games-covers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px 10px;
+}
+
+.games-covers > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 1 220px;
+}
+
+.games-covers a{
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.games-covers img{
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #1B998B;
+  border-radius: 8px;
+}
+
+.games-covers p{
+  font-size: 12px;
+  margin: 10px 0 0;
+  line-height: 1.4;
+}
+
+.games-covers a:hover img{
+  transform: scale(1.05);
+  border-color: #EC058E;
+}
+/* GAMES COVERS SECTION END */
+
+/* SUGGESTIONS SECTION */
+
+.suggestions-section{
+  font-family: 'Kode Mono', Verdana;
+  background-color: #1B998B;
+  color: #151515;
+  padding: 20px;
+  margin: 20px 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.suggestions-section a{
+  color: #EC058E;
+  font-weight: bold;
+  text-decoration: none;
+}
+.suggestions-section a:hover{
+  text-decoration: underline;
+}
+/* SUGGESTIONS SECTION END */
