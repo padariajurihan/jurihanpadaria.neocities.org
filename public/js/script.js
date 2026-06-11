@@ -5,9 +5,9 @@ const prevButton = document.getElementById('prevBtn');
 const nextButton = document.getElementById('nextBtn');
 
 const slideElements = Array.from(document.querySelectorAll('.waifu-carousel .carousel-slide'));
-const profileSlides = slideElements.map((slideEl) => {
+const profileSlides = slideElements.map((slideEl) =>{
   const img = slideEl.querySelector('img');
-  return {
+  return{
     image: img ? img.src : '',
     alt: img ? img.alt : '',
     game: slideEl.dataset.game || '',
@@ -20,7 +20,7 @@ let currentSlideIndex = 0;
 function showSlide(index){
     const slide = profileSlides[index];
 
-    if (!slide){
+    if(!slide){
     return;
     }
 
@@ -30,7 +30,7 @@ function showSlide(index){
   carouselText.textContent = slide.text;
 }
 
-function changeSlide(direction) {
+function changeSlide(direction){
   currentSlideIndex = (currentSlideIndex + direction + profileSlides.length) % profileSlides.length;
   showSlide(currentSlideIndex);
 }

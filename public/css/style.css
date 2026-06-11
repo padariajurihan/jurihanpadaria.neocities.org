@@ -1,10 +1,35 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your HTML content. To learn how to do something, just try searching Google for questions like "how to change link color." */
 
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Verdana, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #151515;
   color: #E4FDE1;
-  margin: 0px;
-  font-family: Verdana;
+  margin: 0;
+  min-height: 100vh;
+  font-size: clamp(14px, 1.1vw, 16px);
+}
+
+img, iframe, video, embed, object{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
 }
 
 /* HEADER SECTION */
@@ -14,12 +39,23 @@ header{
   align-items: center;
   justify-content: space-between;
   background-color: #0B3954;
-  padding: 10px;
+  padding: 16px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+header h1{
+  margin: 0;
+  font-size: clamp(1.5rem, 2.5vw, 2.8rem);
 }
 
 header h1 a{
   color: #E4FDE1;
   text-decoration: none;
+}
+
+header div:last-child{
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
 }
 /* HEADER END */
 
@@ -30,10 +66,30 @@ section.content-section{
 }
 
 section.content-section{
-  font-size: 18px;
-  padding: 8px;
-  margin: 2px 2px;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  padding: 18px;
+  margin: 12px auto;
   text-align: justify;
+  max-width: 1000px;
+  background-color: rgba(11, 57, 84, 0.08);
+  border-radius: 16px;
+}
+
+section.content-section h2{
+  margin-top: 0;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+section.content-section p, section.content-section li{
+  margin-bottom: 12px;
+}
+
+section.content-section ul{
+  padding-left: 1.2rem;
+}
+
+section.content-section a{
+  color: #EC058E;
 }
 /* CONTENT SECTION END */
 
@@ -47,9 +103,11 @@ section.content-section{
 
 section.waifu-profile, section.waifu-story, section.waifu-gallery, section.waifu-games{
   font-family: 'Kode Mono', Verdana;
-  padding: 10px;
-  margin: 10px;
+  padding: 16px;
+  margin: 16px auto;
   border: 4px solid #1B998B;
+  border-radius: 18px;
+  max-width: 1100px;
 }
 
 section.waifu-profile{
@@ -70,7 +128,7 @@ section.waifu-profile{
   align-items: center;
   gap: 12px;
   flex: 0 0 45%;
-  min-width: 320px;
+  min-width: 260px;
   max-width: 480px;
 }
 
@@ -85,14 +143,21 @@ section.waifu-profile{
 .carousel-content img{
   width: 100%;
   max-width: 360px;
-  height: 420px;
+  height: auto;
+  aspect-ratio: 4 / 5;
   object-fit: contain;
   border: 2px solid #1B998B;
   border-radius: 10px;
 }
 
+/* Ensure carousel images don't overflow on large screens and stay responsive */
+.carousel-content img{
+  max-height: 620px;
+}
+
 .carousel-description{
   text-align: center;
+  width: 100%;
 }
 
 .carousel-slides{
@@ -140,6 +205,19 @@ section.waifu-profile{
   }
 }
 
+@media(max-width: 640px){
+  .waifu-carousel{
+    flex-direction: column;
+    min-width: auto;
+  }
+
+  .carousel-btn{
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+}
+
 div.gallery-images{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -165,6 +243,16 @@ div.gallery-images img{
 div.gallery-images p{
   margin: 10px 0 0;
   line-height: 1.4;
+}
+
+@media (max-width: 640px){
+  div.gallery-images{
+    grid-template-columns: 1fr;
+  }
+
+  div.gallery-images img{
+    height: auto;
+  }
 }
 
 /* WAIFU LIST STYLE CONFIG END */
@@ -220,11 +308,13 @@ div.gallery-images p{
 
 .discord-widget iframe{
   width: 100%;
-  height: 500px;
   border: none;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  max-height: 560px;
 }
 
-@media (max-width: 860px) {
+@media(max-width: 860px){
   .discord-widget{
     flex-wrap: wrap;
     flex-direction: column;
@@ -235,18 +325,189 @@ div.gallery-images p{
     width: 100%;
   }
 }
+
+@media(max-width: 640px){
+  .discord-widget iframe{
+    aspect-ratio: 4 / 3;
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 1024px){
+  section.content-section, section.waifu-profile, section.waifu-story, section.waifu-gallery, section.waifu-games, .suggestions-section{
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .waifu-carousel{
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .waifu-info{
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+}
+
+@media(max-width: 768px){
+  header{
+    justify-content: center;
+  }
+
+  header div:last-child{
+    width: 100%;
+    text-align: center;
+  }
+
+  section.content-section{
+    margin: 10px 8px;
+    padding: 14px;
+  }
+
+  .discord-widget{
+    padding: 14px;
+  }
+
+  .games-covers{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .games-covers > div{
+    flex: 1 1 100%;
+  }
+}
+
+@media(max-width: 540px){
+  main{
+    padding: 0 12px 18px;
+  }
+
+  header{
+    padding: 14px 12px;
+  }
+
+  header h1{
+    font-size: clamp(1.4rem, 6vw, 2rem);
+  }
+
+  .waifu-carousel{
+    gap: 8px;
+  }
+
+  .carousel-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .carousel-content img{
+    aspect-ratio: 3 / 4;
+    max-height: 520px;
+  }
+
+  section.content-section{
+    border-width: 3px;
+  }
+
+  .discord-widget iframe{
+    height: 260px;
+  }
+
+  .games-covers{
+    gap: 16px;
+    margin: 16px 8px;
+  }
+
+  footer img{
+    max-width: 120px;
+  }
+}
+
 /* DISCORD WIDGET END */
 
 footer{
   font-family: 'Protest Revolution', Verdana;
   background-color: #0B3954;
-  padding: 10px;
+  padding: 16px;
   color: #E4FDE1;
+  text-align: center;
+}
+
+footer img{
+  max-width: 140px;
+  margin-top: 12px;
 }
 
 a{
   color: #EC058E;
 }
+
+/* GAMES COVERS SECTION */
+.games-covers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px 10px;
+}
+
+.games-covers > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 1 220px;
+}
+
+.games-covers a{
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.games-covers img{
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #1B998B;
+  border-radius: 8px;
+}
+
+.games-covers p{
+  font-size: 12px;
+  margin: 10px 0 0;
+  line-height: 1.4;
+}
+
+.games-covers a:hover img{
+  transform: scale(1.05);
+  border-color: #EC058E;
+}
+/* GAMES COVERS SECTION END */
+
+/* SUGGESTIONS SECTION */
+
+.suggestions-section{
+  font-family: 'Kode Mono', Verdana;
+  background-color: #1B998B;
+  color: #151515;
+  padding: 20px;
+  margin: 20px 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.suggestions-section a{
+  color: #EC058E;
+  font-weight: bold;
+  text-decoration: none;
+}
+.suggestions-section a:hover{
+  text-decoration: underline;
+}
+/* SUGGESTIONS SECTION END */
 
 /* GAMES COVERS SECTION */
 .games-covers{
