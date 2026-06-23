@@ -22,6 +22,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
     <link rel="manifest" href="../images/favicon/site.webmanifest">
 
+    <!-- ICONS SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <title>Juri Han's Waifu Database</title>
 </head>
 <body>
@@ -34,11 +37,35 @@
         </div>
     </header>
 
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="./waifus.html" class="nav-link active">Waifus</a></li>
+                <li><a href="../credits.html" class="nav-link">Credits</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search your Waifu, Games or Animes..." oninput="filtrarWaifus()" autocomplete="off">
+                <div id="searchSuggestions" class="search-suggestions" aria-live="polite"></div>
+            </div>
+        </div>
+    </nav>
     <div class="waifu-wiki">
         <section class="content-section">
-            <h2>The list</h2>
-            <p>Here, you will find all (or almost all) the characters of the anime and games.</p>
-            <p>Huge thanks to: <em><a href="https://www.youtube.com/@NettoX75" target="_blank" rel="noreferrer noopener">NettoX75</a>, <a href="https://www.youtube.com/@HanaFarronPlay" target="_blank" rel="noreferrer noopener">HanaFarronPlay</a>, <a href="https://www.youtube.com/@locadoradezeon3432" target="_blank" rel="noreferrer noopener">Locadora de Zeon</a>, spyke7419, Tert, Tolo, Xiago, Alex Mercer, Zeppeli, Garoto da Sherry</em></p>
+            <h2>The List</h2>
+            <p>This website exists only for entertainment and appreciation of waifus — nothing more, nothing less.</p>
+
+            <p>This list has only been possible due to the many, many, MAAAANY contributions of many individuals and the support of the community. Here is my way to say <a href="../credits.html"><em>Thank you so much</em></a> for the huge amount of effort and time spent to make this possible.</p>
+
+            <div class="observation-section">
+                <p><i class="bi bi-info-circle"></i> Keep in mind that the website is still under development and may contain some inaccuracies, missing information or even some characters not having their own pages.</p>
+            </div>
 
             <h3>Numerical</h3>
             <ul>
@@ -50,29 +77,34 @@
             <h3>A</h3>
             <ul>
                 <li><a href="./a/a2.html">A2 (NieR: Automata)</a></li>
+                <li><a href="./a/admire.html">Admire Vega (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./a/aba.html">A.B.A. (Guilty Gear)</a></li>
                 <li><a href="./a/ada_wong.html">Ada Wong (Resident Evil)</a></li>
+                <li><a href="./a/agnes.html">Agnes Tachyon (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./a/aerith.html">Aerith Gainsborough (Final Fantasy VII: Remake - Intergrade)</a></li>
                 <li><a href="./a/agrias.html">Agrias Oaks (Final Fantasy: Tactics - The Ivalice Chronicles)</a></li>
-                <li><a href="./a/ahri.html">Ahri (League of Legends)</a></li>
+                <li><a href="./a/ahri.html">Ahri (League of Legends/2XKO)</a></li>
+                <li><a href="./a/air-groove.html">Air Groove (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./a/ak-15.html">AK-15 "Voymastina" (Girls' Frontline)</a></li>
                 <li><a href="./a/akane.html">Akane Yagyu (Onimusha: Dawn of Dreams)</a></li>
                 <li><a href="./a/akiyama.html">Akiyama Rinko (Action Taimanin)</a></li>
                 <li><a href="./a/alexandrina.html">Alexandrina Sebastiane (Zenless Zone Zero)</a></li>
                 <li><a href="./a/alia.html">Alia (Mega Man X5)</a></li>
                 <li><a href="./a/alice_suda.html">Alice Suda (Reynatis)</a></li>
+                <li><a href="./a/alexa.html">Alexa (Xenoblade Chronicles X: Definitive Edition)</a></li>
                 <li><a href="./a/alexis.html">Alexis Rhodes (Yu-Gi-Oh! GX)</a></li>
                 <li><a href="./a/alpha_crimson.html">Alpha Crimson (Punishing: Gray Raven)</a></li>
                 <li><a href="./a/alys.html">Alys (SoulQuest)</a></li>
-                <li><a href="./a/ame-no-uzume.html">Ame-no-Uzume (Shin Megami Tensei II/III/IV/IV Apocalypse/V)</a></li>
+                <li><a href="./a/ame-no-uzume.html">Ame-no-Uzume (Shin Megami Tensei V: Vengeance)</a></li>
                 <li><a href="./a/amelia_smith.html">Amelia Smith (Assault Spy)</a></li>
                 <li><a href="./a/ami_mizuno.html">Ami Mizuno (Sailor Moon)</a></li>
                 <li><a href="./a/amy.html">Amy (Grand Chase)</a></li>
                 <li><a href="./a/ana.html">Ana Amari (Overwatch)</a></li>
                 <li><a href="./a/android-18.html">Android 18 (Dragon Ball Z)</a></li>
+                <li><a href="./a/android-21.html">Android 21 (Dragon Ball: FighterZ)</a></li>
                 <li><a href="./a/anby.html">Anby Demara (Zenless Zone Zero)</a></li>
                 <li><a href="./a/angel.html">Ángel (The King of Fighters)</a></li>
-                <li><a href="./a/anko.html">Anko Mitarashi (Naruto)</a></li>
+                <li><a href="./a/anko.html">Anko Mitarashi (Naruto: Shippuden)</a></li>
                 <li><a href="./a/anis.html">Anis (Goddess of Victory: NIKKE)</a></li>
                 <li><a href="./a/anna_williams.html">Anna Williams (Tekken)</a></li>
                 <li><a href="./a/annerose.html">Annerose Vajra (Action Taimanin)</a></li>
@@ -81,9 +113,9 @@
                 <li><a href="./a/anya-gow.html">Anya Stroud (Gears of War 3)</a></li>
                 <li><a href="./a/aphrodite.html">Aphrodite (God of War III)</a></li>
                 <li><a href="./a/aphrodite-ix.html">Aphrodite IX (Image Comics)</a></li>
-                <li><a href="./a/april_may.html">April May (Phoenix Wright: Ace Attorney)</a></li>
+                <li><a href="./a/april_may.html">April May (Phoenix Wright: Ace Attorney Trilogy)</a></li>
                 <li><a href="./a/april_o-neil.html">April O'Neil (Teenage Mutant Ninja Turtles)</a></li>
-                <li><a href="./a/aqua.html">Aqua (Kingdom Hearts)</a></li>
+                <li><a href="./a/aqua.html">Aqua (Kingdom Hearts: Birth by Sleep)</a></li>
                 <li><a href="./a/aranea.html">Aranea Highwind (Final Fantasy XV: Royal Edition)</a></li>
                 <li><a href="./a/arcee.html">Arcee (Transformers)</a></li>
                 <li><a href="./a/ariel.html">Ariel (Disney)</a></li>
@@ -98,16 +130,17 @@
                 <li><a href="./a/astra-yao.html">Astra Yao (Zenless Zone Zero)</a></li>
                 <li><a href="./a/asuka-gta.html">Asuka (Grand Theft Auto III)</a></li>
                 <li><a href="./a/asuka-sk.html">Asuka (Senran Kagura)</a></li>
-                <li><a href="./a/asuka_kazama.html">Asuka Kazama (Tekken)</a></li>
+                <li><a href="./a/asuka_kazama.html">Asuka Kazama (Tekken 5)</a></li>
                 <li><a href="./a/asuka_koukawa.html">Asuka Koukawa (Action Taimanin)</a></li>
                 <li><a href="./a/asuka_soryu.html">Asuka Langley Soryu (Neon Genesis: Evangelion)</a></li>
                 <li><a href="./a/asuna.html">Asuna Yuuki (Sword Art Online)</a></li>
-                <li><a href="./a/athena.html">Athena Asamiya (The King of Fighters)</a></li>
+                <li><a href="./a/athena.html">Athena Asamiya (The King of Fighters 94)</a></li>
                 <li><a href="./a/aya_brea">Aya Brea (Parasite Eve)</a></li>
                 <li><a href="./a/ayame.html">Ayame (Tenchu)</a></li>
                 <li><a href="./a/ayana.html">Ayana (Ereban: Shadow Legacy)</a></li>
                 <li><a href="./a/ayane.html">Ayane (Dead or Alive/Ninja Gaiden)</a></li>
-                <li><a href="./a/ayla.html">Ayla (Grand Chase)</a></li>
+                <li><a href="./a/ayla-gc.html">Ayla (Grand Chase)</a></li>
+                <li><a href="./a/ayla-ct.html">Ayla (Chrono Trigger)</a></li>
                 <li><a href="./a/azucena.html">Azucena Milagros Ortiz Castillo (Tekken 8)</a></li>
                 <li><a href="./a/azula.html">Azula (Avatar: The Last Airbender)</a></li>
             </ul>
@@ -119,12 +152,13 @@
                 <li><a href="./b/baiken.html">Baiken (Guilty Gear)</a></li>
                 <li><a href="./b/bambietta.html">Bambietta Basterbine (Bleach)</a></li>
                 <li><a href="./b/bastet.html">Bastet (Grand Chase)</a></li>
-                <li><a href="./b/beatrice.html">Beatrice (Dante’s Inferno)</a></li>
+                <li><a href="./b/batgirl.html">Batgirl (Gotham Knights)</a></li>
+                <li><a href="./b/beatrice.html">Beatrice (Dante's Inferno)</a></li>
                 <li><a href="./b/beatrix.html">Beatrix (Granblue Fantasy)</a></li>
                 <li><a href="./b/belle.html">Belle (Zenless Zone Zero)</a></li>
-                <li><a href="./b/benedikta.html">Benedikta Harman (Final Fantasy XVI)</a></li>
+                <li><a href="./b/benedikta.html">Benedikta Harman (Final Fantasy XVI: Complete Edition)</a></li>
                 <li><a href="./b/black_cat.html">Black Cat (Marvel Rivals)</a></li>
-                <li><a href="./b/black_rose.html">Black Rose (/.hack//Infection)</a></li>
+                <li><a href="./b/black_rose.html">Black Rose (.hack//Infection)</a></li>
                 <li><a href="./b/black_widow.html">Black Widow (Marvel Rivals)</a></li>
                 <li><a href="./b/blake.html">Blake Belladonna (RWBY)</a></li>
                 <li><a href="./b/blue.html">Blue (Genokids)</a></li>
@@ -142,7 +176,7 @@
                 <li><a href="./c/caesar-king.html">Caesar King (Zenless Zone Zero)</a></li>
                 <li><a href="./c/caitlyn.html">Caitlyn (League of Legends/2XKO)</a></li>
                 <li><a href="./c/camilla.html">Camilla (Fire Emblem)</a></li>
-                <li><a href="./c/cammy.html">Cammy White (Street Fighter)</a></li>
+                <li><a href="./c/cammy.html">Cammy White (Street Fighter 6)</a></li>
                 <li><a href="./c/candice.html">Candice Catnipp (Bleach)</a></li>
                 <li><a href="./c/candy.html">Candy Suxxx (Grand Theft Auto: Vice City)</a></li>
                 <li><a href="./c/carmeara.html">Carmeara (Ultraman)</a></li>
@@ -150,12 +184,14 @@
                 <li><a href="./c/cassie.html">Cassie (Paladins)</a></li>
                 <li><a href="./c/catwoman.html">Catwoman (Batman: Arkham City - Game of the Year Edition)</a></li>
                 <li><a href="./c/cecile.html">Cécile Cosima Caminades (Metal Gear Solid: Peace Walker)</a></li>
+                <li><a href="./c/celica.html">Celica (Xenoblade Chronicles X: Definitive Edition)</a></li>
                 <li><a href="./c/cereza.html">Cereza (Bayonetta)</a></li>
+                <li><a href="./c/cheni.html">Cheni "Quartz" Angel (Gungrave G.O.R.E.)</a></li>
                 <li><a href="./c/chidori.html">Chidori (Assault Spy)</a></li>
                 <li><a href="./c/chizuru.html">Chizuru Kagura (The King of Fighters)</a></li>
                 <li><a href="./c/chloe.html">Chloe Frazer (Uncharted 2: Among Thieves)</a></li>
-                <li><a href="./c/christie.html">Christie Monteiro (Tekken)</a></li>
-                <li><a href="./c/chun-li.html">Chun-Li (Street Fighter)</a></li>
+                <li><a href="./c/christie.html">Christie Monteiro (Tekken 4)</a></li>
+                <li><a href="./c/chun-li.html">Chun-Li (Street Fighter II: The World Warrior)</a></li>
                 <li><a href="./c/ciara.html">Ciara (Frontier Hunter: Erza's Wheel of Fortune)</a></li>
                 <li><a href="./c/ciel.html">Ciel (Mega Man Zero)</a></li>
                 <li><a href="./c/cima.html">Cima Garahau (Gundam 0083: Stardust Memory)</a></li>
@@ -165,7 +201,7 @@
                 <li><a href="./c/ciri.html">Ciri (The Witcher III: Wild Hunt)</a></li>
                 <li><a href="./c/cissia.html">Cissia (Zenless Zone Zero)</a></li>
                 <li><a href="./c/cissnei.html">Cissnei (Crisis Core: Final Fantasy VII - Reunion)</a></li>
-                <li><a href="./c/claire_redfield.html">Claire Redfield (Resident Evil: CODE - Veronica X)</a></li>
+                <li><a href="./c/claire_redfield.html">Claire Redfield (Resident Evil: Veronica)</a></li>
                 <li><a href="./c/cloud_of_darkness.html">Cloud of Darkness (Dissidia Final Fantasy)</a></li>
                 <li><a href="./c/coco.html">Coco (Code Vein)</a></li>
                 <li><a href="./c/commander.html">Commander (NieR: Automata)</a></li>
@@ -188,7 +224,7 @@
                 <li><a href="./d/d-va.html">D.Va (Overwatch)</a></li>
                 <li><a href="./d/daisy.html">Daisy (Super Mario)</a></li>
                 <li><a href="./d/dana-iclucia.html">Dana Iclucia (Ys VIII: Lacrimosa of Dana)</a></li>
-                <li><a href="./d/danu.html">Danu (Shin Megami Tensei IV/IV Apocalypse / V)</a></li>
+                <li><a href="./d/danu.html">Danu (Shin Megami Tensei IV/IV: Apocalypse/V: Vengeance)</a></li>
                 <li><a href="./d/daphne.html">Daphne Blake (Scooby-Doo)</a></li>
                 <li><a href="./d/dark_magician_girl.html">Dark Magician Girl (Yu-Gi-Oh!)</a></li>
                 <li><a href="./d/deadlock.html">Deadlock (Valorant)</a></li>
@@ -212,6 +248,7 @@
                 <li><a href="./e/elegg.html">Elegg (Goddess of Victory: NIKKE)</a></li>
                 <li><a href="./e/elena_ffvii.html">Elena (Final Fantasy VII: Rebirth)</a></li>
                 <li><a href="./e/elena_sfiii.html">Elena (Street Fighter III: New Generation)</a></li>
+                <li><a href="./e/elena_vanquish.html">Elena Ivanova (Vanquish)</a></li>
                 <li><a href="./e/eleonor.html">Eleonor (Action Taimanin)</a></li>
                 <li><a href="./e/elesis.html">Elesis (Grand Chase)</a></li>
                 <li><a href="./e/elizabeth.html">Elizabeth Liones (Nanatsu no Taizai)</a></li>
@@ -219,9 +256,10 @@
                 <li><a href="./e/elisa.html">Elisa (Metal Gear Solid: Portable Ops)</a></li>
                 <li><a href="./e/elise.html">Elise (Dead or Alive)</a></li>
                 <li><a href="./e/elita-1.html">Elita-1 (Transformers One)</a></li>
+                <li><a href="./e/elma.html">Elma (Xenoblade Chronicles X: Definitive Edition)</a></li>
                 <li><a href="./e/elphelt.html">Elphelt Valentine (Guilty Gear)</a></li>
-                <li><a href="./e/ema_skye.html">Ema Skye (Phoenix Wright: Ace Attorney)</a></li>
-                <li><a href="./e/ema.html">Ema (Sekiro: Shadows Die Twice)</a></li>
+                <li><a href="./e/ema_skye.html">Ema Skye (Phoenix Wright: Ace Attorney Trilogy)</a></li>
+                <li><a href="./e/ema.html">Ema (Sekiro: Shadows Die Twice - Game of the Year Edition)</a></li>
                 <li><a href="./e/ember.html">Ember (Arknights: Endfield)</a></li>
                 <li><a href="./e/emerald_herald.html">Emerald Herald (Dark Souls II)</a></li>
                 <li><a href="./e/emilia_jenius.html">Emilia Jenius (Macross 7 the Movie: The Galaxy's Calling Me!)</a></li>
@@ -261,27 +299,29 @@
                 <li><a href="./f/fediel.html">Fediel (Granblue Fantasy: Relink - Endless Ragnarök)</a></li>
                 <li><a href="./f/fern.html">Fern (Frieren: Beyond Journey's End)</a></li>
                 <li><a href="./f/felicia.html">Felicia (Darkstalkers)</a></li>
-                <li><a href="./f/fi.html">Fi (The Legend of Zelda: Skyward Sword)</a></li>
+                <li><a href="./f/fi.html">Fi (The Legend of Zelda: Skyward Sword HD)</a></li>
                 <li><a href="./f/fio.html">Fio Germi (Metal Slug 2)</a></li>
                 <li><a href="./f/fiona.html">Fiona (Dead or Alive)</a></li>
                 <li><a href="./f/fiora.html">Fiora (League of Legends)</a></li>
                 <li><a href="./f/fiora-xenoblade.html">Fiora (Xenoblade Chronicles: Definitive Edition)</a></li>
                 <li><a href="./f/fire-keeper.html">Fire Keeper Soul (Dark Souls III)</a></li>
                 <li><a href="./f/franceska.html">Franceska Mila Rose (Bleach)</a></li>
-                <li><a href="./f/franziska.html">Franziska von Karma (Phoenix Wright: Ace Attorney)</a></li>
+                <li><a href="./f/franziska.html">Franziska von Karma (Phoenix Wright: Ace Attorney Trilogy)</a></li>
                 <li><a href="./f/fraux.html">Fraux (Granblue Fantasy: Relink - Endless Ragnarök)</a></li>
                 <li><a href="./f/freyja.html">Freyja (AeternoBlade)</a></li>
                 <li><a href="./f/frieren.html">Frieren (Frieren: Beyond Journey's End)</a></li>
                 <li><a href="./f/fuuma-aki.html">Fuuma Aki (Action Taimanin)</a></li>
                 <li><a href="./f/fuuma-hibiki.html">Fuuma Hibiki (Action Taimanin)</a></li>
                 <li><a href="./f/furia.html">Furia (Paladins)</a></li>
-                <li><a href="./f/fury.html">Fury (Darksiders III)</a></li>
+                <li><a href="./f/fury.html">Fury (Darksiders III: Blades & Whip Edition)</a></li>
             </ul>
 
             <h3>G</h3>
             <ul>
                 <li><a href="./g/galacta.html">Galacta (Marvel Rivals)</a></li>
                 <li><a href="./g/garnet.html">Garnet (Final Fantasy IX)</a></li>
+                <li><a href="./g/gentildonna.html">Gentildonna (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./g/gold-ship.html">Gold Ship (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./g/grace_ashcroft.html">Grace Ashcroft (Resident Evil: Requiem)</a></li>
                 <li><a href="./g/grace_howard.html">Grace Howard (Zenless Zone Zero)</a></li>
                 <li><a href="./g/guillotine.html">Guillotine (Goddess of Victory: NIKKE)</a></li>
@@ -294,24 +334,25 @@
                 <li><a href="./h/hakurei.html">Hakurei Reimu (Touhou)</a></li>
                 <li><a href="./h/hana_uzaki.html">Hana Uzaki (Uzaki-chan wa asobitai!)</a></li>
                 <li><a href="./h/hanako.html">Hanako Ikezawa (Katawa Shoujo)</a></li>
-                <li><a href="./h/handler.html">Handler (Monster Hunter World)</a></li>
+                <li><a href="./h/handler.html">Handler (Monster Hunter: World)</a></li>
                 <li><a href="./h/harley_quinn.html">Harley Quinn (Batman: Arkham City - Game of the Year Edition)</a></li>
                 <li><a href="./h/haruka.html">Haruka Sawamura (Yakuza 5)</a></li>
-                <li><a href="./h/hathor.html">Hathor (Shin Megami Tensei II/IV/IV Apocalypse)</a></li>
+                <li><a href="./h/hathor.html">Hathor (Shin Megami Tensei IV: Apocalypse)</a></li>
                 <li><a href="./h/hatsune_miku.html">Hatsune Miku (Hatsune Miku/Project DIVA)</a></li>
                 <li><a href="./h/heather_mason.html">Heather Mason (Silent Hill 3)</a></li>
                 <li><a href="./h/helena_douglas.html">Helena Douglas (Dead or Alive)</a></li>
-                <li><a href="./h/helena_harper.html">Helena Harper (Resident Evil 6)</a></li>
+                <li><a href="./h/helena_harper.html">Helena Harper (Resident Evil 6: Complete Edition)</a></li>
                 <li><a href="./h/helm.html">Helm (Goddess of Victory: NIKKE)</a></li>
                 <li><a href="./h/hibana.html">Hibana (Nightshade)</a></li>
-                <li><a href="./h/hinako.html">Hinako Shimizu (Silent Hill F)</a></li>
-                <li><a href="./h/hinata.html">Hinata Hyuga (Naruto)</a></li>
-                <li><a href="./h/hinoa.html">Hinoa (Monster Hunter Rise)</a></li>
+                <li><a href="./h/hinako.html">Hinako Shimizu (Silent Hill f)</a></li>
+                <li><a href="./h/hinata.html">Hinata Hyuga (Naruto: Shippuden)</a></li>
+                <li><a href="./h/hinoa.html">Hinoa (Monster Hunter: Rise)</a></li>
                 <li><a href="./h/historiath.html">Historiath (Granblue Fantasy: Relink)</a></li>
                 <li><a href="./h/hitmoni.html">Hitomi (Dead or Alive)</a></li>
                 <li><a href="./h/homura.html">Homura Hime (Homura Hime)</a></li>
                 <li><a href="./h/honey.html">Honey Kisaragi (Cutie Honey)</a></li>
                 <li><a href="./h/honoka.html">Honoka (Dead or Alive 5: Last Round)</a></li>
+                <li><a href="./h/hoshimi_miyabi.html">Hoshimi Miyabi (Zenless Zone Zero)</a></li>
                 <li><a href="./h/hrist.html">Hrist (Valkyrie Profile)</a></li>
                 <li><a href="./h/hsien-ko.html">Hsien-Ko (Darkstalkers)</a></li>
                 <li><a href="./h/huntress.html">Huntress (DC Comics)</a></li>
@@ -331,19 +372,22 @@
                 <li><a href="./i/ingrid.html">Ingrid (Street Fighter)</a></li>
                 <li><a href="./i/integra.html">Integra Hellsing (Hellsing)</a></li>
                 <li><a href="./i/invisible_woman.html">Invisible Woman (Marvel Rivals)</a></li>
+                <li><a href="./i/io-gbf.html">Io (Granblue Fantasy: Relink)</a></li>
                 <li><a href="./i/io.html">Io (Paladins)</a></li>
-                <li><a href="./i/irene_lew.html">Irene Lew (Ninja Gaiden II)</a></li>
+                <li><a href="./i/irene_lew.html">Irene Lew (Ninja Gaiden: Sigma 2)</a></li>
                 <li><a href="./i/irene_yoneda.html">Irene Yoneda (Assault Spy)</a></li>
                 <li><a href="./i/iris-gc.html">Iris (Grand Chase)</a></li>
                 <li><a href="./i/iris-mmx4.html">Iris (Mega Man X4)</a></li>
                 <li><a href="./i/iroha.html">Iroha (Samurai Shodown)</a></li>
+                <li><a href="./i/izzy.html">Isabel "Izzy" Dias (Need for Speed: Most Wanted - Black Edition)</a></li>
                 <li><a href="./i/isane.html">Isane Kotetsu (Bleach)</a></li>
-                <li><a href="./i/ivy.html">Ivy Valentine (SoulCalibur)</a></li>
+                <li><a href="./i/ivy.html">Ivy Valentine (SoulCalibur II)</a></li>
             </ul>
 
             <h3>J</h3>
             <ul>
                 <li><a href="./j/jade.html">Jade (Mortal Kombat: Komplete Edition)</a></li>
+                <li><a href="./j/jewels.html">Jade "Jewels" Barrett (Need for Speed: Most Wanted - Black Edition)</a></li>
                 <li><a href="./j/jackie-tristan.html">Jackie Tristan (Bleach)</a></li>
                 <li><a href="./j/jack-o.html">Jack-O' Valentine (Guilty Gear)</a></li>
                 <li><a href="./j/jam.html">Jam Kuradoberi (Guilty Gear)</a></li>
@@ -353,28 +397,32 @@
                 <li><a href="./j/jennifer.html">Jennifer Simpson (Clock Tower: Rewind)</a></li>
                 <li><a href="./j/jessie.html">Jessie Rasberry (Final Fantasy VII: Remake - Intergrade)</a></li>
                 <li><a href="./j/jett.html">Jett (Valorant)</a></li>
-                <li><a href="./j/jill-valentine.html">Jill Valentine (Resident Evil)</a></li>
+                <li><a href="./j/jill-valentine.html">Jill Valentine (Resident Evil 3: Nemesis)</a></li>
                 <li><a href="./j/jill-warrick.html">Jill Warrick (Final Fantasy XVI)</a></li>
                 <li><a href="./j/joanna-dark.html">Joanna Dark (Perfect Dark)</a></li>
                 <li><a href="./j/jolyne.html">Jolyne Kujo (JoJo's Bizarre Adventures: Stone Ocean)</a></li>
-                <li><a href="./j/juliet.html">Juliet Starling (Lollipop Chainsaw: RePOP)</a></li>
+                <li><a href="./j/juli.html">Juli Kidman (The Evil Within)</a></li>
+                <li><a href="./j/juliet.html">Juliet Dendrobium (Romeo is a Dead Man)</a></li>
+                <li><a href="./j/juliet-repop.html">Juliet Starling (Lollipop Chainsaw: RePOP)</a></li>
                 <li><a href="./j/jun.html">Jun Kazama (Tekken 8)</a></li>
+                <li><a href="./j/jungle.html">Jungle Pocket (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./j/juno.html">Juno (Overwatch)</a></li>
-                <li><a href="./j/juri-han.html">Juri Han (Street Fighter)</a></li>
+                <li><a href="./j/juri-han.html">Juri Han (Ultra Street Fighter IV)</a></li>
             </ul>
 
             <h3>K</h3>
             <ul>
                 <li><a href="./k/kaede.html">Kaede (Onimusha: Warlords)</a></li>
+                <li><a href="./k/kafka.html">Kafka (Honaki: Star Rail)</a></li>
                 <li><a href="./k/kallia.html">Kallia (Grand Chase)</a></li>
                 <li><a href="./k/kamen-rider-femme.html">Kamen Rider Femme (Kamen Rider)</a></li>
                 <li><a href="./k/karai.html">Karai (Teenage Mutant Ninja Turtles)</a></li>
                 <li><a href="./k/karen.html">Karen Amamiya (Code Vein)</a></li>
                 <li><a href="./k/kasane-randall.html">Kasane Randall (Scarlet Nexus)</a></li>
-                <li><a href="./k/kasane-teto.html">Kasane Teto (Hatsune Miku)</a></li>
+                <li><a href="./k/kasane-teto.html">Kasane Teto (Hatsune Miku/Project DIVA)</a></li>
                 <li><a href="./k/kasumi.html">Kasumi (Dead or Alive/Ninja Gaiden)</a></li>
                 <li><a href="./k/kasumi-paladins.html">Kasumi (Paladins)</a></li>
-                <li><a href="./k/kat.html">Kat (Gravity Rush)</a></li>
+                <li><a href="./k/kat.html">Kat (Gravity Rush: Remastered)</a></li>
                 <li><a href="./k/katalina.html">Katalina (Granblue Fantasy: Relink)</a></li>
                 <li><a href="./k/katara.html">Katara (Avatar: The Last Airbender)</a></li>
                 <li><a href="./k/katarina.html">Katarina (League of Legends)</a></li>
@@ -382,12 +430,16 @@
                 <li><a href="./k/killjoy.html">Killjoy (Valorant)</a></li>
                 <li><a href="./k/kinessa.html">Kinessa (Paladins)</a></li>
                 <li><a href="./k/king.html">King (Art of Fighting/The King of Fighters)</a></li>
+                <li><a href="./k/king_halo.html">King Halo (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./k/kamikaze.html">Kira "Kamikaze" Nakasato (Need for Speed: Most Wanted - Black Edition)</a></li>
                 <li><a href="./k/kiriko.html">Kiriko (Overwatch)</a></li>
                 <li><a href="./k/kit.html">Kit (GameOverse)</a></li>
                 <li><a href="./k/kitana.html">Kitana (Mortal Kombat: Komplete Edition)</a></li>
+                <li><a href="./k/kitasan.html">Kitasan Black (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./k/kiyomi-takada.html">Kiyomi Takada (Death Note)</a></li>
                 <li><a href="./k/kobeni.html">Kobeni Higashiyama (Chainsaw Man)</a></li>
-                <li><a href="./k/konan.html">Konan (Naruto)</a></li>
+                <li><a href="./k/komagata.html">Komagata Yumi (Samurai X)</a></li>
+                <li><a href="./k/konan.html">Konan (Naruto: Shippuden)</a></li>
                 <li><a href="./k/konoe-subaru.html">Konoe Subaru (Maio Chiki!)</a></li>
                 <li><a href="./k/korra.html">Korra (Avatar: The Legend of Korra)</a></li>
                 <li><a href="./k/korsica.html">Korsica (Hi-Fi Rush)</a></li>
@@ -397,7 +449,7 @@
                 <li><a href="./k/kumori.html">Kumori (Ninja Gaiden: Ragebound)</a></li>
                 <li><a href="./k/kunimitsu.html">Kunimitsu (Tekken)</a></li>
                 <li><a href="./k/kurenai-rn.html">Kurenai (Red Ninja)</a></li>
-                <li><a href="./k/kurenai-yuhi.html">Kurenai Yuhi (Naruto)</a></li>
+                <li><a href="./k/kurenai-yuhi.html">Kurenai Yuhi (Naruto: Shippuden)</a></li>
                 <li><a href="./k/kuukaku-shiba.html">Kuukaku Shiba (Bleach)</a></li>
                 <li><a href="./k/kyrie.html">Kyrie (Devil May Cry 4: Special Edition)</a></li>
             </ul>
@@ -406,16 +458,16 @@
             <ul>
                 <li><a href="./l/label.html">Label (Goddess of Victory: NIKKE)</a></li>
                 <li><a href="./l/ladiva.html">Ladiva (Granblue Fantasy)</a></li>
-                <li><a href="./l/lady-maria.html">Lady Maria of Astral Clocktower (Bloodborne)</a></li>
+                <li><a href="./l/lady-maria.html">Lady Maria of Astral Clocktower (Bloodborne: The Old Hunters)</a></li>
                 <li><a href="./l/lady.html">Lady (Devil May Cry 3: Dante's Awakening - Special Edition)</a></li>
                 <li><a href="./l/lady_dimitrescu.html">Lady Dimitrescu (Resident Evil: Village)</a></li>
-                <li><a href="./l/lana_skye.html">Lana Skye (Phoenix Wright: Ace Attorney)</a></li>
+                <li><a href="./l/lana_skye.html">Lana Skye (Phoenix Wright: Ace Attorney Trilogy)</a></li>
                 <li><a href="./l/lapis.html">Lapis (Action Taimanin)</a></li>
                 <li><a href="./l/lara_croft.html">Lara Croft (Tomb Raider)</a></li>
                 <li><a href="./l/laxasia.html">Laxasia (Lies of P)</a></li>
                 <li><a href="./l/layer.html">Layer (Mega Man X8)</a></li>
                 <li><a href="./l/lecia.html">Lecia (Granblue Fantasy)</a></li>
-                <li><a href="./l/lenneth.html">Lenneth (Valkyrie Profile)</a></li>
+                <li><a href="./l/lenneth.html">Lenneth (Valkyrie Profile: Lenneth)</a></li>
                 <li><a href="./l/leona-lol.html">Leona (League of Legends)</a></li>
                 <li><a href="./l/lrons_heidern.html">Leona Heidern (The King of Fighters)</a></li>
                 <li><a href="./l/leviathan.html">Leviathan (Mega Man Zero)</a></li>
@@ -428,13 +480,15 @@
                 <li><a href="./l/lillith.html">Lillith (Paladins)</a></li>
                 <li><a href="./l/lily.html">Lily Artemis II (Stellar Blade)</a></li>
                 <li><a href="./l/li-mei.html">Li-Mei (Mortal Kombat: Deadly Alliance)</a></li>
+                <li><a href="./l/lin-lee-koo.html">Lin Lee Koo (Xenoblade Chronicles X: Definitive Edition)</a></li>
+                <li><a href="./l/ling-xiaoyu.html">Ling Xiaoyu (Tekken 3)</a></li>
                 <li><a href="./l/lire.html">Lire (Grand Chase)</a></li>
                 <li><a href="./l/lisa-lisa.html">Lisa Lisa (JoJo’s Bizarre Adventure)</a></li>
                 <li><a href="./l/lissandra.html">Lissandra (League of Legends)</a></li>
                 <li><a href="./l/lotus.html">Lotus (Warframe)</a></li>
                 <li><a href="./l/louisa.html">Louisa (Lost Soul Aside)</a></li>
                 <li><a href="./l/lucia-contra.html">Lucia (Contra: Operation Galuga)</a></li>
-                <li><a href="./l/lucia-dmc.html">Lucia (Devil May Cry 2)</a></li>
+                <li><a href="./l/lucia-dmc.html">Lucia (Devil May Cry 2 HD)</a></li>
                 <li><a href="./l/lucia-ff.html">Lucia (Final Fight 2)</a></li>
                 <li><a href="./l/lucrecia.html">Lucrecia Crescent (Dirge of Cerberus: Final Fantasy VII)</a></li>
                 <li><a href="./l/lucy.html">Lucy Heartfilia (Fairy Tail)</a></li>
@@ -445,7 +499,7 @@
                 <li><a href="./l/luna_snow.html">Luna Snow (Marvel Rivals)</a></li>
                 <li><a href="./l/lune.html">Lune (Clair Obscur: Expedition 33)</a></li>
                 <li><a href="./l/lux.html">Lux (League of Legends)</a></li>
-                <li><a href="./l/lyn.html">Lyn (Fire Emblem)</a></li>
+                <li><a href="./l/lyn.html">Lyn (Fire Emblem: The Blazing Blade)</a></li>
                 <li><a href="./l/lynn.html">Lynn Minmay (Super Dimension Fortress Macross)</a></li>
             </ul>
 
@@ -463,8 +517,9 @@
                 <li><a href="./m/maki-aikawa.html">Maki Aikawa (Tojima Wants to Be a Kamen Rider)</a></li>
                 <li><a href="./m/maki-zenin.html">Maki Zen'in (Jujutsu Kaisen)</a></li>
                 <li><a href="./m/makima.html">Makima (Chainsaw Man)</a></li>
-                <li><a href="./m/makoto.html">Makoto (Street Fighter)</a></li>
+                <li><a href="./m/makoto.html">Makoto (Street Fighter III: New Generation)</a></li>
                 <li><a href="./m/malenia.html">Malenia (Elden Ring)</a></li>
+                <li><a href="./m/manhattan.html">Manhattan Cafe (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./m/manon.html">Manon (Street Fighter 6)</a></li>
                 <li><a href="./m/maomao.html">Maomao (The Apothecary Diaries)</a></li>
                 <li><a href="./m/marcille.html">Marcille Donato (Dungeon Meshi)</a></li>
@@ -477,24 +532,29 @@
                 <li><a href="./m/marisa.html">Marisa Kirisame (Touhou)</a></li>
                 <li><a href="./m/maruzensky.html">Maruzensky (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./m/masami.html">Masami Iwasawa (Angel Beats)</a></li>
+                <li><a href="./m/matoko.html">Matoko Kusanagi (Ghost in the Shell)</a></li>
                 <li><a href="./m/mature.html">Mature (The King of Fighters)</a></li>
-                <li><a href="./m/maya_fey.html">Maya Fey (Phoenix Wright: Ace Attorney)</a></li>
+                <li><a href="./m/maya_fey.html">Maya Fey (Phoenix Wright: Ace Attorney Trilogy)</a></li>
                 <li><a href="./m/maya_ibuki.html">Maya Ibuki (Neon Genesis: Evangelion)</a></li>
                 <li><a href="./m/medea.html">Medea (Ultra Age)</a></li>
                 <li><a href="./m/mei-ow.html">Mei (Overwatch)</a></li>
                 <li><a href="./m/mei-ling.html">Mei-Ling (Darkstalkers)</a></li>
                 <li><a href="./m/mei_terumi.html">Mei Terumi (Naruto: Shippuden)</a></li>
+                <li><a href="./m/mejiro_arder.html">Mejiro Arder (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./m/mejiro_mcqueen.html">Mejiro McQueen (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./m/mejiro_ryan.html">Mejiro Ryan (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./m/melina.html">Melina (Elden Ring)</a></li>
                 <li><a href="./m/melissa.html">Melissa (Need for Speed: Underground)</a></li>
                 <li><a href="./m/meryl.html">Meryl Silverburgh (Metal Gear Solid 4: Guns of the Patriots)</a></li>
-                <li><a href="./m/mia_fey.html">Mia Fey (Phoenix Wright: Ace Attorney)</a></li>
-                <li><a href="./m/mia_townsend.html">Mia Townsend (Need for Speed: Most Wanted)</a></li>
+                <li><a href="./m/mia_fey.html">Mia Fey (Phoenix Wright: Ace Attorney Trilogy)</a></li>
+                <li><a href="./m/mia_townsend.html">Mia Townsend (Need for Speed: Most Wanted - Black Edition)</a></li>
                 <li><a href="./m/miary_zo.html">Miary Zo (Tekken 8)</a></li>
                 <li><a href="./m/michaela.html">Michaela (Brown Dust II)</a></li>
                 <li><a href="./m/michelle.html">Michelle Aubert (Onimusha 3: Demon Siege)</a></li>
                 <li><a href="./m/michiru.html">Michiru Kagemori (BNA: Brand New Animal)</a></li>
-                <li><a href="./m/midna.html">Midna (The Legend of Zelda: Twilight Princess)</a></li>
+                <li><a href="./m/midna.html">Midna (The Legend of Zelda: Twilight Princess HD)</a></li>
                 <li><a href="./m/mihara.html">Mihara (Goddess of Victory: NIKKE)</a></li>
+                <li><a href="./m/mihono.html">Mihono Bourbon (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./m/mikasa.html">Mikasa Ackerman (Attack on Titan)</a></li>
                 <li><a href="./m/mila.html">Mila (Dead or Alive)</a></li>
                 <li><a href="./m/mileena.html">Mileena (Mortal Kombat: Komplete Edition)</a></li>
@@ -502,9 +562,11 @@
                 <li><a href="./m/milia_jenius.html">Milia Farina Jenius (Super Dimension Fortress Macross)</a></li>
                 <li><a href="./m/mimiru.html">Mimiru (.hack//SIGN)</a></li>
                 <li><a href="./m/mina-majikina.html">Mina Majikina (Samurai Shodown)</a></li>
-                <li><a href="./m/minoto.html">Minoto (Monster Hunter Rise)</a></li>
+                <li><a href="./m/minoto.html">Minoto (Monster Hunter: Rise)</a></li>
                 <li><a href="./m/mio_honda.html">Mio Honda (Granblue Fantasy)</a></li>
                 <li><a href="./m/mipha.html">Mipha (The Legend of Zelda: Breath of the Wild)</a></li>
+                <li><a href="./m/mira.html">Mira (Warhammer 40,000: Space Marine - Anniversary Edition)</a></li>
+                <li><a href="./m/mira-nova.html">Mira Nova (Buzz Lightyear of Star Command)</a></li>
                 <li><a href="./m/mirabell.html">Mirabell Bell (Action Taimanin)</a></li>
                 <li><a href="./m/mirko.html">Mirko (My Hero Academia)</a></li>
                 <li><a href="./m/misa.html">Misa (Mitsurugi Kamui Hikae)</a></li>
@@ -512,12 +574,10 @@
                 <li><a href="./m/misaki.html">Misaki (Dead or Alive)</a></li>
                 <li><a href="./m/misato.html">Misato Katsuragi (Neon Genesis: Evangelion)</a></li>
                 <li><a href="./m/mihsa.html">Misha Arsellec Lune (Ar Tonelico: Melody of Elemia)</a></li>
-                <li><a href="./m/mira.html">Mira (Warhammer 40,000: Space Marine - Anniversary Edition)</a></li>
                 <li><a href="./m/mistral.html">Mistral (Metal Gear Rising: Revengeance)</a></li>
                 <li><a href="./m/mistress.html">Mistress of the Night (Wuchang: Fallen Feathers)</a></li>
                 <li><a href="./m/mitusuru.html">Mitsuru Kiriju (Persona 4: Arena Ultimax)</a></li>
-                <li><a href="./m/miyabi.html">Miyabi (Zenless Zone Zero)</a></li>
-                <li><a href="./m/miyabi-senran-kagura.html">Miyabi (Senran Kagura)</a></li>
+                <li><a href="./m/miyabi.html">Miyabi (Senran Kagura: Shinovi Versus)</a></li>
                 <li><a href="./m/mizuki.html">Mizuki Shiranui (Action Taimanin)</a></li>
                 <li><a href="./m/momiji.html">Momiji (Dead or Alive/Ninja Gaiden)</a></li>
                 <li><a href="./m/momochi.html">Momochi Nagi (Action Taimanin)</a></li>
@@ -534,24 +594,26 @@
 				<li><a href="./n/naamah.html">Naamah (Shin Megami Tensei V: Vengeance)</a></li>
                 <li><a href="./n/nadia_cassel.html">Nadia Cassel (Metal Slug 4)</a></li>
                 <li><a href="./n/naga.html">Naga (Goddess of Victory: NIKKE)</a></li>
-                <li><a href="./n/nagi.html">Nagi (Zenless Zone Zero)</a></li>
                 <li><a href="./n/nami.html">Nami (One Piece)</a></li>
                 <li><a href="./n/nana.html">Nana (Mega Man X: Command Mission)</a></li>
                 <li><a href="./n/narmaya.html">Narmaya (Granblue Fantasy: Relink)</a></li>
                 <li><a href="./n/natasha.html">Natasha Zabigov (Mobile Fighter G: Gundam)</a></li>
                 <li><a href="./n/natsuki.html">Natsuki (Doki Doki Literature Club)</a></li>
-                <li><a href="./n/nayo.html">Nayo (Final Fantasy VII: Remake - Intergrade)</a></li>
                 <li><a href="./n/naomi.html">Naomi Hunter (Metal Gear Solid 4: Guns of the Patriots)</a></li>
+                <li><a href="./n/nayo.html">Nayo (Final Fantasy VII: Remake - Intergrade)</a></li>
+                <li><a href="./n/neilnail.html">Neilnail (Xenoblade Chronicles X: Definitive Edition)</a></li>
                 <li><a href="./n/nelia.html">Nelia (Grand Chase)</a></li>
+                <li><a href="./n/nellliel.html">Nelliel Tu Odelschwanck (Bleach)</a></li>
                 <li><a href="./n/neme.html">Nene Fujinoki (My First Girlfriend is a Gal)</a></li>
                 <li><a href="./n/neon-ffo.html">Neon (Stranger of Paradie: Final Fantasy Origin)</a></li>
                 <li><a href="./n/neon.html">Neon (Valorant)</a></li>
                 <li><a href="./n/nia.html">Nia Melty (Frontier Hunter: Erza's Wheel of Fortune)</a></li>
-                <li><a href="./n/nicoletta.html">Nicoletta Goldstein (Devil May Cry 5: Special Edition)</a></li>
+                <li><a href="./n/nice.html">Nice Nature (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./n/nicoletta.html">Nicoletta "Nico" Goldstein (Devil May Cry 5: Special Edition)</a></li>
                 <li><a href="./n/nico-robin.html">Nico Robin (One Piece)</a></li>
                 <li><a href="./n/nicole.html">Nicole Demara (Zenless Zone Zero)</a></li>
                 <li><a href="./n/nika.html">Nika Mguro (Reynatis)</a></li>
-                <li><a href="./n/nikki.html">Nikki (Need for Speed: Carbon)</a></li>
+                <li><a href="./n/nikki.html">Nikki (Need for Speed: Carbon - Collector's Edition)</a></li>
                 <li><a href="./n/nina.html">Nina Williams (Tekken)</a></li>
                 <li><a href="./n/ninny-spangcole.html">Ninny Spangcole (Burn the Witch)</a></li>
                 <li><a href="./n/nobara-kugisaki.html">Nobara Kugisaki (Jujutsu Kaisen)</a></li>
@@ -559,7 +621,7 @@
                 <li><a href="./n/node.html">Node (Black Souls 2)</a></li>
                 <li><a href="./n/nora.html">Nora (Valkyrie Elysium)</a></li>
                 <li><a href="./n/nunnally.html">Nunnally vi Britannia (Code Geass)</a></li>
-                <li><a href="./n/nuwa.html">Nuwa (Shin Megami Tensei V/V: Vengeance / )</a></li>
+                <li><a href="./n/nuwa.html">Nuwa (Shin Megami Tensei V: Vengeance)</a></li>
                 <li><a href="./n/nyx.html">Nyx (Paladins)</a></li>
             </ul>
 
@@ -574,6 +636,7 @@
                 <li><a href="./o/onisaki.html">Onisaki Kirara (Action Taimanin)</a></li>
                 <li><a href="./o/ophiuchus.html">Ophiuchus Shaina (Knights of the Zodiac)</a></li>
                 <li><a href="./o/orchid.html">Orchid (Killer Instinct)</a></li>
+                <li><a href="./o/orfevre.html">Orfevre (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./o/orihime-inoue.html">Orihime Inoue (Bleach)</a></li>
                 <li><a href="./o/orphie.html">Orphie Magnusson (Zenless Zone Zero)</a></li>
                 <li><a href="./o/overture.html">Overture (Lies of P)</a></li>
@@ -599,7 +662,7 @@
                 <li><a href="./p/princess-peach.html">Princess Peach (Super Mario)</a></li>
                 <li><a href="./p/princess-prin-prin.html">Princess Prin Prin (Ghouls 'n' Ghosts)</a></li>
                 <li><a href="./p/promeia.html">Promeia (Zenless Zone Zero)</a></li>
-                <li><a href="./p/power_girl.html">Power Girl (Injustice 2)</a></li>
+                <li><a href="./p/power_girl.html">Power Girl (Injustice 2: Legendary Edition)</a></li>
                 <li><a href="./p/psylocke.html">Psylocke (Marvel Rivals)</a></li>
                 <li><a href="./p/pulchra.html">Pulchra Fellini (Zenless Zone Zero)</a></li>
                 <li><a href="./p/pyra.html">Pyra (Xenoblade Chronicles 2)</a></li>
@@ -617,7 +680,7 @@
                 <li><a href="./r/rachel_nfs.html">Rachel (Need for Speed: Underground 2)</a></li>
                 <li><a href="./r/rachel_ng.html">Rachel (Ninja Gaiden: Sigma 2)</a></li>
                 <li><a href="./r/rain.html">Rain Mikamura (Mobile Fighter G: Gundam)</a></li>
-                <li><a href="./r/rainbow-mika.html">Rainbow Mika (Street Fighter Alpha)</a></li>
+                <li><a href="./r/rainbow-mika.html">Rainbow Mika (Street Fighter Alpha 2)</a></li>
                 <li><a href="./r/rao.html">Rao (Ōkami HD)</a></li>
                 <li><a href="./r/rangiku.html">Rangiku Matsumoto (Bleach)</a></li>
                 <li><a href="./r/rapunzel.html">Rapunzel (Swords & Slippers)</a></li>
@@ -651,12 +714,13 @@
                 <li><a href="./r/rogue.html">Rogue (Marvel Rivals)</a></li>
                 <li><a href="./r/rosa.html">Rosa Cossette D'Elise (Ace Combat 7: Skies Unknown)</a></li>
                 <li><a href="./r/rosalina.html">Rosalina (Super Mario Galaxy)</a></li>
-                <li><a href="./r/rose.html">Rose (Street Fighter Alpha: Warriors’ Dreams)</a></li>
+                <li><a href="./r/rose.html">Rose (Street Fighter Alpha: Warriors' Dreams)</a></li>
                 <li><a href="./r/rose-belmont.html">Rose Belmont (Castlevania: Belmont's Curse)</a></li>
                 <li><a href="./r/rosemary.html">Rosemary (Metal Gear Solid 2: Sons of Liberty)</a></li>
-                <li><a href="./r/rosetta.html">Rosetta (Granblue Fantasy)</a></li>
+                <li><a href="./r/rosetta.html">Rosetta (Granblue Fantasy: Relink)</a></li>
                 <li><a href="./r/rottytops.html">Rottytops (Shantae)</a></li>
-                <li><a href="./r/ruby.html">Ruby Rose (RWBY)</a></li>
+                <li><a href="./r/ruby.html">Ruby Heart (Marvel vs. Capcom 2: New Age of Heroes)</a></li>
+                <li><a href="./r/ruby-rwby.html">Ruby Rose (RWBY)</a></li>
                 <li><a href="./r/rukia.html">Rukia Kuchiki (Bleach)</a></li>
                 <li><a href="./r/rumi_aikawa.html">Rumi Aikawa (Metal Slug)</a></li>
                 <li><a href="./r/rydia.html">Rydia (Final Fantasy IV)</a></li>
@@ -668,21 +732,27 @@
                 <li><a href="./s/saati.html">Saati (Paladins)</a></li>
                 <li><a href="./s/saber.html">Saber (Fate/Zero)</a></li>
                 <li><a href="./s/sage.html">Sage (Valorant)</a></li>
-                <li><a href="./s/sakura.html">Sakura (Street Fighter Alpha: Warriors’ Dreams)</a></li>
-                <li><a href="./s/sakura_haruno.html">Sakura Haruno (Naruto)</a></li>
+                <li><a href="./s/sakura.html">Sakura (Street Fighter Alpha: Warriors' Dreams)</a></li>
+                <li><a href="./s/sakura_bakushin.html">Sakura Bakushin O (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./s/sakura_chiyono.html">Sakura Chiyono O (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./s/sakura_haruno.html">Sakura Haruno (Naruto: Shippuden)</a></li>
                 <li><a href="./s/sakura_igawa.html">Sakura Igawa (Action Taimanin)</a></li>
                 <li><a href="./s/sakuya.html">Sakuya (Ōkami HD)</a></li>
                 <li><a href="./s/samantha.html">Samantha (Need for Speed: Underground)</a></li>
-                <li><a href="./s/samus_aran.html">Samus Aran (Metroid)</a></li>
+                <li><a href="./s/samus_aran.html">Samus Aran (Metroid/Metroid Prime)</a></li>
                 <li><a href="./s/sarah_bryant.html">Sarah Bryant (Virtua Fighter)</a></li>
                 <li><a href="./s/sari.html">Sari  Nishijima (Reynatis)</a></li>
+                <li><a href="./s/satono.html">Satono Crown (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./s/satono_diamond.html">Satono Diamond (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./s/satsuki.html">Satsuki Kiryuuin (Kill La Kill)</a></li>
                 <li><a href="./s/saya.html">Saya (Samurai Shodown)</a></li>
                 <li><a href="./s/sayori.html">Sayori (Doki Doki Literature Club)</a></li>
                 <li><a href="./s/scarlet.html">Scarlet (Final Fantasy VII: Remake - Intergrade)</a></li>
+                <li><a href="./s/schala.html">Schala (Chrono Trigger)</a></li>
                 <li><a href="./s/scherazard.html">Scherazard Harvey (The Legend of Heroes: Trails in the Sky)</a></li>
                 <li><a href="./s/sciel.html">Sciel (Clair Obscur: Expedition 33)</a></li>
                 <li><a href="./s/seiko.html">Seiko Ayase (Dandadan)</a></li>
+                <li><a href="./s/seiun.html">Seiun Sky (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./s/sejuani.html">Sejuani (League of Legends)</a></li>
                 <li><a href="./s/sena-seta.html">Sena Seta (Tojima Wants to Be a Kamen Rider)</a></li>
                 <li><a href="./s/senko.html">Senkō (Senran Kagura)</a></li>
@@ -700,16 +770,18 @@
                 <li><a href="./s/sheila.html">Sheila Tan (Bright Memory: Infinite)</a></li>
                 <li><a href="./s/shermie.html">Shermie (The King of Fighters)</a></li>
                 <li><a href="./s/sherry.html">Sherry Birkin (Resident Evil 6/Resident Evil: Requiem)</a></li>
-                <li><a href="./s/sheva.html">Sheva Alomar (Resident Evil 5)</a></li>
+                <li><a href="./s/sheva.html">Sheva Alomar (Resident Evil 5: Gold Edition)</a></li>
                 <li><a href="./s/shiki.html">Shiki (Samurai Shodown)</a></li>
                 <li><a href="./s/shinju.html">Shinju Inui (My Dress-Up Darling)</a></li>
                 <li><a href="./s/shinobu.html">Shinobu (Aragami: Nightfall)</a></li>
-                <li><a href="./s/shinobu-oshino.html">Shinobu Oshino (Monogatari)</a></li>
+                <li><a href="./s/shinobu-oshino.html">Shinobu Oshino (Bakemonogatari)</a></li>
                 <li><a href="./s/shinohara.html">Shinohara Mari (Action Taimanin)</a></li>
                 <li><a href="./s/shoko.html">Shoko Nishimiya (Koe no Katachi)</a></li>
                 <li><a href="./s/shorekeeper.html">Shorekeeper (Wuthering Waves)</a></li>
                 <li><a href="./s/sice.html">Sice (Final Fantasy: Type-0 HD)</a></li>
-                <li><a href="./s/silmeria.html">Silmeria (Valkyrie Profile)</a></li>
+                <li><a href="./s/silmeria.html">Silmeria (Valkyrie Profile 2: Silmeria)</a></li>
+                <li><a href="./s/sindel.html">Sindel (Mortal Kombat: Komplete Edition)</a></li>
+                <li><a href="./s/sirius.html">Sirius Symboli (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./s/skarlet.html">Skarlet (Mortal Kombat: Komplete Edition)</a></li>
                 <li><a href="./s/sky.html">Sky (Shantae)</a></li>
                 <li><a href="./s/skye-paladins.html">Skye (Paladins)</a></li>
@@ -728,10 +800,14 @@
                 <li><a href="./s/sombra.html">Sombra (Overwatch)</a></li>
                 <li><a href="./s/starfire.html">Starfire (DC Comics)</a></li>
                 <li><a href="./s/stargirl.html">Stargirl (DC Comics)</a></li>
+                <li><a href="./s/stay_gold.html">Stay Gold (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./s/stella-nox-fleuret.html">Stella Nox Fleuret (Final Fantasy: Versus XIII)</a></li>
+                <li><a href="./s/still_in_love.html">Still in Love (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./s/storm.html">Storm (Marvel Rivals)</a></li>
                 <li><a href="./s/suki.html">Suki (Avatar: The Last Airbender)</a></li>
                 <li><a href="./s/suzuka.html">Suzuka (Mitsurugi Kamui Hikae)</a></li>
-                <li><a href="./s/supergirl.html">Supergirl (Injustice 2)</a></li>
+                <li><a href="./s/super_creek.html">Super Creek (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./s/supergirl.html">Supergirl (Injustice 2: Legendary Edition)</a></li>
                 <li><a href="./s/sword_maiden.html">Sword Maiden (Brown Dust II)</a></li>
                 <li><a href="./s/sylvia.html">Sylvia Christel (No More Heroes)</a></li>
                 <li><a href="./s/symmetra.html">Symmetra (Overwatch)</a></li>
@@ -740,8 +816,10 @@
 
             <h3>T</h3>
             <ul>
+                <li><a href="./t/t-m_opera.html">T.M. Opera O (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./t/tachy.html">Tachy (Stellar Blade)</a></li>
                 <li><a href="./t/tae.html">Tae Takemi (Persona 5: Royal)</a></li>
+                <li><a href="./t/taiki.html">Taiki Shuttle (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./t/taiga-aisaka.html">Taiga Aisaka (Toradora)</a></li>
                 <li><a href="./t/taki.html">Taki (SoulCalibur)</a></li>
                 <li><a href="./t/talia_al-ghul.html">Talia al Ghul (Batman: Arkham City - Game of the Year Edition)</a></li>
@@ -751,25 +829,28 @@
                 <li><a href="./t/tatsuki-arisawa.html">Tatsuki Arisawa (Bleach)</a></li>
                 <li><a href="./t/tekkain-kaworu.html">Tekkain Kaworu (Action Taimanin)</a></li>
                 <li><a href="./t/tekkain-koharu.html">Tekkain Koharu (Action Taimanin)</a></li>
-                <li><a href="./t/tenten.html">Tenten (Naruto)</a></li>
+                <li><a href="./t/tenten.html">Tenten (Naruto: Shippuden)</a></li>
                 <li><a href="./t/terra.html">Terra Branford (Final Fantasy VI)</a></li>
                 <li><a href="./t/the_boss.html">The Boss (Metal Gear Solid 3: Snake Eater)</a></li>
+                <li><a href="./t/the_butt_witch.html">The Butt Witch (Twelve Forever)</a></li>
                 <li><a href="./t/theresa.html">Theresa Lorca (007: First Light)</a></li>
                 <li><a href="./t/tia.html">Tia (Goddess of Victory: NIKKE)</a></li>
                 <li><a href="./t/tier-harribel.html">Tier Harribel (Bleach)</a></li>
                 <li><a href="./t/tifa.html">Tifa Lockhart (Final Fantasy VII: Remake - Intergrade)</a></li>
                 <li><a href="./t/tina.html">Tina Armstrong (Dead or Alive)</a></li>
-                <li><a href="./t/tokime.html">Tokime Bando (Kamen Rider Fuuto Pi)</a></li>
-                <li><a href="./t/toph.html">Toph (Avatar: The Legend of Korra)</a></li>
+                <li><a href="./t/tokai.html">Tokai Teio (Umamusume: Pretty Derby)</a></li>
+                <li><a href="./t/tokime.html">Tokime Bando (Kamen Rider: Fuuto Pi)</a></li>
+                <li><a href="./t/toph.html">Toph Beifong (Avatar: The Legend of Korra)</a></li>
                 <li><a href="./t/tracer.html">Tracer (Overwatch)</a></li>
                 <li><a href="./t/tracy.html">Tracy (Taimanin RPGX)</a></li>
                 <li><a href="./t/trigger.html">Trigger (Zenless Zone Zero)</a></li>
-                <li><a href="./t/trish.html">Trish (Devil May Cry)</a></li>
-                <li><a href="./t/trucy.html">Trucy Wright (Phoenix Wright: Ace Attorney)</a></li>
+                <li><a href="./t/trish.html">Trish (Devil May Cry HD)</a></li>
+                <li><a href="./t/trucy.html">Trucy Wright (Phoenix Wright: Ace Attorney Trilogy)</a></li>
                 <li><a href="./t/tsubasa-hanekawa.html">Tsubasa Hanekawa (Bakemonogatari)</a></li>
                 <li><a href="./t/tsuki.html">Tsuki Uzaki (Uzaki-chan wa asobitai!)</a></li>
-                <li><a href="./t/tsunade.html">Tsunade Senju (Naruto)</a></li>
-                <li><a href="./t/tweyen.html">Tweyen (Granblue Fantasy)</a></li>
+                <li><a href="./t/tsukishiro_yanagi.html">Tsukishiro Yanagi (Zenless Zone Zero)</a></li>
+                <li><a href="./t/tsunade.html">Tsunade Senju (Naruto: Shippuden)</a></li>
+                <li><a href="./t/tweyen.html">Tweyen (Granblue Fantasy: Relink)</a></li>
                 <li><a href="./t/ty_lee.html">Ty Lee (Avatar: The Last Airbender)</a></li>
                 <li><a href="./t/tyra.html">Tyra (Paladins)</a></li>
             </ul>
@@ -780,7 +861,7 @@
                 <li><a href="./u/ulala.html">Ulala (Space Channel 5)</a></li>
                 <li><a href="./u/ultimecia.html">Ultimecia (Final Fantasy VIII)</a></li>
                 <li><a href="./u/urara.html">Urara (Grand Chase)</a></li>
-                <li><a href="./u/uriel.html">Uriel (Darksiders)</a></li>
+                <li><a href="./u/uriel.html">Uriel (Darksiders: Warmastered Edition)</a></li>
                 <li><a href="./u/ursula.html">Ursula (Metal Gear Solid: Portable Ops)</a></li>
             </ul>
 
@@ -800,6 +881,7 @@
                 <li><a href="./v/vivian.html">Vivian (Paladins)</a></li>
                 <li><a href="./v/vivian-banshee.html">Vivian Banshee (Zenless Zone Zero)</a></li>
                 <li><a href="./v/vixen.html">Vixen (DC Comics)</a></li>
+                <li><a href="./v/vodka.html">Vodka (Umamusume: Pretty Derby)</a></li>
                 <li><a href="./v/volume.html">Volume (Goddess of Victory: NIKKE)</a></li>
                 <li><a href="./v/vora.html">Vora (Paladins)</a></li>
             </ul>
@@ -811,7 +893,7 @@
                 <li><a href="./w/widowmaker.html">Widowmaker (Overwatch)</a></li>
                 <li><a href="./w/wilhelmina.html">Wilhelmina (Brown Dust II)</a></li>
                 <li><a href="./w/winry.html">Winry Rockbell (Fullmetal Alchemist)</a></li>
-                <li><a href="./w/witchblade.html">Witchblade (Top Cow Games)</a></li>
+                <li><a href="./w/witchblade.html">Witchblade (Top Cow Comics)</a></li>
                 <li><a href="./w/wonder_woman.html">Wonder Woman (Injustice: Gods Among Us - Ultimate Edition)</a></li>
                 <li><a href="./w/wuchang.html">Wuchang (Wuchang: Fallen Feathers)</a></li>
             </ul>
@@ -821,7 +903,6 @@
 				<li><a href="./x/xaihi.html">Xaihi (Arknights: Endfield)</a></li>
                 <li><a href="./x/xena.html">Xena (Xena: Warrior Princess)</a></li>
                 <li><a href="./x/xenovia.html">Xenovia Quarta (High School DxD)</a></li>
-                <li><a href="./x/xiaoyu.html">Xiaoyu (Tekken)</a></li>
             </ul>
 
             <h3>Y</h3>
@@ -846,7 +927,7 @@
                 <li><a href="./y/yukiko.html">Yukiko Amagami (Persona 4: Golden)</a></li>
                 <li><a href="./y/yukino.html">Yukino (Dead or Alive)</a></li>
                 <li><a href="./y/yumia-liessfeldt.html">Yumia Liessfeldt (Atelier Yumia: The Alchemist of Memories & the Envisioned Land)</a></li>
-                <li><a href="./y/yumi_nfs.html">Yumi (Need for Speed: Carbon)</a></li>
+                <li><a href="./y/yumi_nfs.html">Yumi (Need for Speed: Carbon - Collector's Edition)</a></li>
                 <li><a href="./y/yumi_sk.html">Yumi (Senran Kagura)</a></li>
                 <li><a href="./y/yuna.html">Yuna (Final Fantasy X/X-2: HD Remaster)</a></li>
                 <li><a href="./y/yuri-ddlc.html">Yuri (Doki Doki Literature Club)</a></li>
@@ -856,7 +937,7 @@
 
             <h3>Z</h3>
             <ul>
-                <li><a href="./z/zafina.html">Zafina (Tekken)</a></li>
+                <li><a href="./z/zafina.html">Zafina (Tekken 6)</a></li>
                 <li><a href="./z/zatanna.html">Zatanna Zatara (Injustice: Gods Among Us - Ultimate Edition)</a></li>
                 <li><a href="./z/zelda.html">Zelda (The Legend of Zelda: Breath of the Wild)</a></li>
                 <li><a href="./z/zeta.html">Zeta (Granblue Fantasy)</a></li>
@@ -864,8 +945,9 @@
                 <li><a href="./z/zhuang-fangyi.html">Zhuang Fangyi (Arknights: Endfield)</a></li>
                 <li><a href="./z/zyra.html">Zyra (League of Legends)</a></li>
             </ul>
+
             <section class="suggestions-section">
-                <p>Add your Waifu here! <a href="../../contact.html">Contact us</a> to submit a character for inclusion in the list.</p>
+                <p>Add your Waifu here! <a href="../contact.html">Contact us</a> to submit a character for inclusion in the list.</p>
             </section>
         </section>
     </div>

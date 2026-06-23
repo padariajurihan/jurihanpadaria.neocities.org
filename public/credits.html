@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Fame</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- GOOGLE FONTS SECTION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON SECTION -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="./index.html">Welcome to the Hall of Fame</a></h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./waifulist/waifus.html" class="nav-link active">Waifus</a></li>
+                <li><a href="./credits.html" class="nav-link">Credits</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search your Waifu, Games or Animes..." oninput="filtrarWaifus()" autocomplete="off">
+                <div id="searchSuggestions" class="search-suggestions" aria-live="polite"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="content-section">
+            <h1>Credits</h1>
+            <p>This website was created by me - <em>Juri Han Padaria</em> - as a personal project to share his love for waifu characters from games and animes. The content of the website is based not only on the creator's personal preferences but also on the feedback and suggestions from the community. All characters featured on the website are fictional and belong to their respective creators. The website is intended for entertainment purposes only and does not endorse or promote any specific character or media.</p>
+
+            <p>Huge thanks to: <em><a href="https://www.youtube.com/@NettoX75" target="_blank" rel="noreferrer noopener">NettoX75</a>, <a href="https://www.youtube.com/@HanaFarronPlay" target="_blank" rel="noreferrer noopener">HanaFarronPlay</a>, <a href="https://www.youtube.com/@locadoradezeon3432" target="_blank" rel="noreferrer noopener">Locadora de Zeon</a>, spyke7419, Tert, Tolo, Xiago, Alex Mercer, Zeppeli, Garoto da Sherry</em></p>
+            <section class="suggestions-section">
+                <p>Wanna be listed on this page too? <a href="./contact.html">Add your waifu here!</a></p>
+            </section>
+        </section>
+        </div>
+        <div class="discord-widget">
+            <h2>Join us on Discord!</h2>
+            <iframe src="https://discord.com/widget?id=1265509683045859451&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <h2><em>Be water, my friend!</em></h2>
+        <img src="../images/neocities.png" alt="Neocities logo">
+    </footer>
+</body>
+</html>

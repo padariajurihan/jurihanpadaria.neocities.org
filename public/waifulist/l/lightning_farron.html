@@ -26,6 +26,23 @@
         <p>Nothing I can't handle.</p>
     </header>
 
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../waifus.html" class="nav-link active">Waifus</a></li>
+                <li><a href="../../credits.html" class="nav-link">Credits</a></li>
+                <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <input type="text" id="searchBar" placeholder="Search your Waifu, Games or Animes..." onkeyup="filtrarWaifus()">
+        </div>
+    </nav>
+
     <section class="waifu-profile">
         <div class="waifu-info">
             <h2>Profile</h2>
