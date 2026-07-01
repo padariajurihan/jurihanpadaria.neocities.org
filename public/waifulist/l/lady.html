@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- GOOGLE FONTS SECTION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON SECTION -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+
+    <!-- ICONS SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Lady - Waifu List</title>
+</head>
+<body>
+    <header>
+        <h1>Mary Ann "Lady" Arkham</h1>
+        <p>Time to go to work.</p>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../waifus.html" class="nav-link active">Waifus</a></li>
+                <li><a href="../../credits.html" class="nav-link">Credits</a></li>
+                <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search your Waifu, Games or Animes..." oninput="filtrarWaifus()" autocomplete="off">
+                <div id="searchSuggestions" class="search-suggestions" aria-live="polite"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="warning-section">
+            <p><i class="bi bi-exclamation-diamond-fill"></i> This page is still under development, it's not ready yet.</p>
+        </div>
+    </section>
+
+    <section class="waifu-profile">
+        <div class="waifu-info">
+            <h2>Profile</h2>
+            <p><strong>Origin:</strong> Devil May Cry 3: Dante's Awakening - Special Edition, Devil May Cry 4: Special Edition, Devil May Cry 5: Special Edition</p>
+            <p><strong>Age:</strong>18 (Devil May Cry 3: Dante's Awakening), 44 (Devil May Cry 5: Special Edition)</p>
+            <p><strong>Height:</strong> 170 cm (5'7")</p>
+            <p><strong>Race:</strong> Human</p>
+            <p><strong>Occupation:</strong> Devil Hunter</p>
+            <p><strong>Personality:</strong> She is a fighter that stands for peace. She impersonates the tranquility and purity. She loves animals and nature, being peaceful. Jun fights and wins against her opponents without resorting to their death.</p>
+            <p><strong>Appearance:</strong> Jun has black short hair and brown eyes, usually accompanied by a white headband or scarf. The black and white color palette is prominent in her design, reflecting her peaceful nature. Despite her slim body, she possesses great strength and agility, allowing her to deal devastating blows with her martial arts skills.</p>
+            <p><strong>Notable Traits:</strong> Short Black Hair, Heterochromia, Straight to Action, Fire Weapons Specialist</p>
+        </div>
+        <div class="waifu-carousel">
+            <button class="carousel-btn" id="prevBtn" type="button" aria-label="Previous image">◀</button>
+            <div class="carousel-content">
+                <img id="profile-carousel-image" src="" alt="">
+                <div class="carousel-description">
+                    <h3 id="profile-carousel-title"></h3>
+                    <p id="profile-carousel-text"></p>
+                </div>
+
+                <div class="carousel-slides" aria-hidden="true">
+                    <div class="carousel-slide" data-game="Tekken 8" data-text="Jun Kazama in Tekken 8.">
+                        <img src="https://i.postimg.cc/43Mkbdgx/Jun-Kazama-00.png" alt="Jun Kazama model in Tekken 8">
+                    </div>
+
+                    <div class="carousel-slide" data-game="Tekken 2" data-text="Jun Kazama in Tekken 2.">
+                        <img src="https://i.postimg.cc/PJX4CWRt/Jun-Kazama-Tekken-TT1full.png" alt="Jun Kazama model in Tekken 2">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn" id="nextBtn" type="button" aria-label="Next image">▶</button>
+        </div>
+    </section>
+
+    <section class="waifu-story">
+        <h2>Story</h2>
+        <h3>Devil May Cry 3: Dante's Awakening - Special Edition</h3>
+        <p>Jun starred in Tekken 2 as a WWWC officer (A Wildlife Protection Organization) sent to imprison Kazuya Mishima for animal trafficking.</p>
+        <p>Jun grew up in Yakushima and developed psychic abilities and a strong connection to nature. During the tournament, she sensed a malignant aura in Kazuya (the Devil) and, instead of merely capturing him, felt a spiritual urge to save him from his loneliness and corruption. From this complex union, Jun became pregnant with Jin. At the end of the tournament, after Kazuya’s alleged death in a volcano, Jun confronted and defeated the Devil entity, which was trying to possess her unborn child, using the power of her Kazama blood.</p>
+
+        <h3>Disappearance and Legacy - From Tekken 3 (1997) until Tekken 7 (2017)</h3>
+        <p>For many years, almost three decades, she disappeared from the games as a playable character, only appearing in cameos or visions as in Tekken 4 and Tekken 6.</p>
+
+        <p>Jun raised Jin alone in the mountains of Yakushima, teaching him her family’s traditional Kazama martial arts style and values of self-discipline. On Jin’s 15th birthday, they were attacked by Ogre, a fighting divinity. Jun instructed Jin to go find his grandfather, Heihachi, if anything happened. After the confrontation, their house was destroyed and Jun disappeared, presumed dead by Jin, though her official status with Namco remained as “missing.”</p>
+        <h3>Devil May Cry 4: Special Edition</h3>
+        <p>During this period, she was a central character in Tekken Tag Tournament (1 and 2) and Tekken Revolution. In the Tag 2 spin-off, the connection between Jun and Unknown was introduced—her corrupted counterpart, controlled by a malicious spirit, who serves as the game’s final boss.</p>
+
+        <h3>The <em>Light of Hope</em> returns!</h3>
+        <p>Jun officially returns as a playable character in the main story, being described as the <em>Light of Hope</em>.</p>
+
+        <p>It’s revealed that Jun didn’t die in Ogre’s attack; she survived by barely escaping to the Kazama Sanctuary, where she entered a deep sleep—or limbo—to heal her injuries while her consciousness monitored the fight between Kazuya and Jin.</p>
+        <h3>Devil May Cry 5: Special Edition</h3>
+        <p>Through spiritual projections (shown as a small white bird), she guides Jin to accept his power and purify the Devil gene. At the end of Tekken 8, after the final battle between father and son, Jun appears physically to an unconscious Kazuya, reaffirming her goal of saving both from destruction.</p>
+
+        <h3>The Light of Hope in other medias</h3>
+        <p>Outside the games, Jun’s story has been explored with variations across media such as Tekken: The Motion Picture, where she and Kazuya are childhood friends, and the anime series Tekken: Bloodline, which details her rigorous training with Jin before the Ogre attack. In the 2010 live-action film, her story is significantly altered, depicting her as a victim of Kazuya’s attack.</p>
+
+    </section>
+
+    <section class="waifu-gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div>
+                <img src="https://i.postimg.cc/pL9Fc5t4/Jun-Kazama-Tekken8.jpg" alt="Jun Kazama in Tekken 8">
+                <p>Jun Kazama in Tekken 8</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/8cBH5JCx/Jun-Kazama-Tekken-TT2Quote.jpg" alt="Jun Kazama quote from Tekken Tag Tournament 2">
+                <p>One of Jun Kazama's quotes from Tekken Tag Tournament 2</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/RCs1PBHW/Jun-Kazama-dove.jpg" alt="Jun Kazama with a dove on her hand">
+                <p>Jun Kazama with a dove on her hand</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/K8rRHPHn/Jun-Kazama-Bloodlines-Battle-Stance.jpg" alt="Jun Kazama in Bloodlines">
+                <p>Jun Kazama in Tekken: Bloodlines</p>
+            </div>
+            
+            <div>
+                <img src="https://i.postimg.cc/MK10br1d/Jun-Kazama-Tekken2Cinematic.png" alt="Jun Kazama in Tekken 2 Cinematic">
+                <p>Jun Kazama in Tekken 2 Cinematic</p>
+            </div>
+            
+            <div>           
+                <img src="https://i.postimg.cc/136dFHzs/Jun-Kazama-Kazama-Art-Style.jpg" alt="Jun Kazama displaying the Kazama art style">
+                <p>A display of Kazama Art Style.</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/yYKj5H6D/Jun-Kazama-No-Other-Choice.jpg" alt="Jun Kazama saying 'I have no other choice'">
+                <p>Violence is never the answer, but when it comes to Devil Genes...!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/sgN2B31b/Jun-Kazama-Spank.jpg" alt="Jun Kazama displaying her martial arts skills">
+                <p>You definitely got the moves, Jun!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="waifu-games">
+        <h2>Games</h2>
+        <div class="games-covers">
+            <div>
+                <a href="https://store.steampowered.com/app/631510/Devil_May_Cry_HD_Collection/?curator_clanid=45066561" target="_blank" rel="noopener noreferrer">
+                <img class="game-cover-img" src="https://i.postimg.cc/zDwD5CNT/Tekken2-GAMECOVER.jpg" alt="DMC3 Cover" data-steam="https://store.steampowered.com/app/329050/Devil_May_Cry_4_Special_Edition/?curator_clanid=45066561"></a>
+                <p>Devil May Cry 3: Dante's Awakening - Special Edition</p>
+            </div>
+
+            <div>
+                <a href="https://store.steampowered.com/app/329050/Devil_May_Cry_4_Special_Edition/?curator_clanid=45066561" target="_blank" rel="noopener noreferrer"></a>
+                <img class="game-cover-img" src="https://i.postimg.cc/4dQCC1cy/Tekken-TT2-GAMECOVER.jpg" alt="DMC4 Cover" data-steam="https://store.steampowered.com/app/329050/Devil_May_Cry_4_Special_Edition/?curator_clanid=45066561"></a>
+                <p>Devil May Cry 4: Special Edition</p>
+            </div>
+
+            <div>
+                <a href="https://store.steampowered.com/app/601150/Devil_May_Cry_5/?curator_clanid=45066561" target="_blank" rel="noopener noreferrer">
+                <img class="game-cover-img" src="https://i.postimg.cc/PrZWdFxZ/Tekken8-GAMECOVER.jpg" alt="DMC5 Cover" data-steam="https://store.steampowered.com/app/1778820/TEKKEN_8/?curator_clanid=45054681"></a>
+                <p>Devil May Cry 5: Special Edition</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="discord-widget">
+        <div>
+            <h2>Join us on Discord!</h2>
+            <p>Don't be shy! Join our community of retro-gaming today!</p>
+            <p>We sometimes have events and discussions about our favorite games, watch movies, anime and more!</p>
+            <p>Thanks!!!</p>
+        </div>
+        <div>
+            <iframe src="https://discord.com/widget?id=1265509683045859451&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </div>
+
+    <section class="suggestions-section">
+        <p>Add your Waifu here! <a href="../../contact.html">Contact us</a> to submit a character for inclusion in the list.</p>
+    </section>
+
+    <footer>
+        <h2><em>Be water, my friend!</em></h2>
+        <img src="../../images/neocities.png" alt="Neocities logo">
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>
