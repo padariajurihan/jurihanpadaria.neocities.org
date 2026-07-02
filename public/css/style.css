@@ -934,3 +934,44 @@ div.critical-section{
     word-break: break-word;
   }
 }
+
+/* WEB BADGES SECTION */
+.webbadges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.webbadges img {
+  height: auto;
+  max-width: 100px;
+  transition: transform 0.2s ease;
+}
+
+.webbadges img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .webbadges {
+    gap: 12px;
+  }
+  
+  .webbadges img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 420px) {
+  .webbadges {
+    gap: 10px;
+  }
+  
+  .webbadges img {
+    max-width: 70px;
+  }
+}
+/* WEB BADGES SECTION END */
