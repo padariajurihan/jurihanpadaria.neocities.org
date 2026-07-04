@@ -256,7 +256,7 @@ div.gallery-images p{
 
 /* WAIFU LIST STYLE CONFIG END */
 
-/* COLOR CONFIG */
+/* COLOR CONFIG  - BOTH TEXT AND BACKGROUND COLOR */
 .red{
   color: #E63946;
 }
@@ -301,6 +301,12 @@ div.gallery-images p{
 .aqua-blue{
   color: #0ACDFF;
 }
+.glaucous{
+  color: #6B7FD7;
+}
+.frosted-blue{
+  color: #BCEDF6;
+}
 .turquoise-blue{
   color: #41EAD4;
 }
@@ -315,6 +321,13 @@ div.gallery-images p{
 }
 .sky-surge{
   color: #5BC0EB;
+}
+
+.dark-amethyst{
+  color: #320E3B;
+}
+.indigo-velvet{
+  color: #4C2A85;
 }
 
 .platinum{
