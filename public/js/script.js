@@ -209,3 +209,80 @@ async function filtrarWaifus(){
         .join('');
     suggestionsContainer.classList.add('active');
 }
+
+/* IMAGE MODAL / LIGHTBOX FUNCTIONALITY */
+function initImageModal(){
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalDescription = document.getElementById('modalDescription');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalClose = document.getElementById('modalClose');
+
+  if(!modal) return; // Modal não existe na página
+
+  // Função para abrir o modal
+  function openModal(imageSrc, description = ''){
+    modalImage.src = imageSrc;
+    modalDescription.textContent = description;
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+  }
+
+  // Função para fechar o modal
+  function closeModal(){
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = ''; // Restore scrolling
+  }
+
+  // Click em imagens do carousel
+  const carouselImage = document.getElementById('profile-carousel-image');
+  if(carouselImage){
+    carouselImage.addEventListener('click', function(){
+      const title = document.getElementById('profile-carousel-title').textContent;
+      const text = document.getElementById('profile-carousel-text').textContent;
+      const description = title && text ? `${title}\n${text}` : title;
+      openModal(this.src, description);
+    });
+  }
+
+  // Click em imagens da galeria
+  const galleryImages = document.querySelectorAll('div.gallery-images img');
+  galleryImages.forEach(img => {
+    img.addEventListener('click', function(){
+      const description = this.nextElementSibling?.textContent?.trim() || '';
+      openModal(this.src, description);
+    });
+  });
+
+  // Fechar ao clicar no overlay
+  if(modalOverlay){
+    modalOverlay.addEventListener('click', closeModal);
+  }
+
+  // Fechar ao clicar no botão close
+  if(modalClose){
+    modalClose.addEventListener('click', closeModal);
+  }
+
+  // Fechar ao pressionar ESC
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('active')){
+      closeModal();
+    }
+  });
+
+  // Fechar ao clicar fora do container
+  modal.addEventListener('click', function(e){
+    if(e.target === modal){
+      closeModal();
+    }
+  });
+}
+
+// Inicializar modal quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', function(){
+  initImageModal();
+});
+/* IMAGE MODAL / LIGHTBOX FUNCTIONALITY END */
