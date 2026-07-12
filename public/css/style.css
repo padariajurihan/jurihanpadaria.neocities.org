@@ -442,10 +442,14 @@ div.gallery-images p{
   .games-covers{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .games-covers > div{
     flex: 1 1 100%;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
   }
 }
 
@@ -488,6 +492,15 @@ div.gallery-images p{
   .games-covers{
     gap: 16px;
     margin: 16px 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .games-covers > div{
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
   }
 
   footer img{
@@ -530,84 +543,24 @@ a{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex: 0 1 220px;
+  flex: 0 1 clamp(180px, 22vw, 220px);
+  width: clamp(180px, 22vw, 220px);
 }
 
-.games-covers a{
-  display: inline-block;
+.games-covers a,
+.games-covers img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .games-covers img{
-  max-width: 200px;
-  height: auto;
+  object-fit: cover;
   border: 2px solid #1B998B;
-  border-radius: 8px;
-}
-
-.games-covers p{
-  font-size: 12px;
-  margin: 10px 0 0;
-  line-height: 1.4;
-}
-
-.games-covers a:hover img{
-  transform: scale(1.05);
-  border-color: #EC058E;
-}
-/* GAMES COVERS SECTION END */
-
-/* SUGGESTIONS SECTION */
-
-.suggestions-section{
-  font-family: 'Kode Mono', Verdana;
-  background-color: #1B998B;
-  color: #151515;
-  padding: 20px;
-  margin: 20px 10px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.suggestions-section a{
-  color: #EC058E;
-  font-weight: bold;
-  text-decoration: none;
-}
-.suggestions-section a:hover{
-  text-decoration: underline;
-}
-/* SUGGESTIONS SECTION END */
-
-/* GAMES COVERS SECTION */
-.games-covers{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 30px;
-  padding: 20px;
-  margin: 20px 10px;
-}
-
-.games-covers > div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex: 0 1 220px;
-}
-
-.games-covers a{
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.games-covers img{
-  max-width: 200px;
-  height: auto;
-  border: 2px solid #1B998B;
-  border-radius: 8px;
+  background-color: #151515;
 }
 
 .games-covers p{
@@ -1057,6 +1010,21 @@ div.critical-section{
   line-height: 1.5;
   max-width: 600px;
   word-break: break-word;
+}
+
+.modal-description p {
+  margin: 0.4rem 0;
+}
+
+.modal-game-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+}
+
+.modal-character-name {
+  font-weight: 400;
+  color: #C8F2DB;
 }
 
 .modal-close {

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- GOOGLE FONTS SECTION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON SECTION -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+
+    <!-- ICONS SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Zelda - Waifu List</title>
+</head>
+<body>
+    <header>
+        <h1>Zelda</h1>
+        <p>Shadow and light are two sides of the same coin…One cannot exist without the other.</p>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../waifus.html" class="nav-link active">Waifus</a></li>
+                <li><a href="../../credits.html" class="nav-link">Credits</a></li>
+                <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search your Waifu, Games or Animes..." oninput="filtrarWaifus()" autocomplete="off">
+                <div id="searchSuggestions" class="search-suggestions" aria-live="polite"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="waifu-profile">
+        <div class="waifu-info">
+            <h2>Profile</h2>
+            <p><strong class="fresh-sky">Origin:</strong> TLOZ: Twilight Princess, TLOZ: Breath of the Wild, TLOZ: Tears of the Kingdom, TOLZ: Ocarina of Time, and many more...</p>
+            <p><strong class="fresh-sky">Age:</strong> Unknown</p>
+            <p><strong class="fresh-sky">Height:</strong> Unknown</p>
+            <p><strong class="fresh-sky">Race:</strong> Hylian</p>
+            <p><strong class="fresh-sky">Occupation:</strong> Princess of the Kingdom of Hyrule, Matriarch (Twilight Princess), Sage (Ocarina of Time), Sage of Time (Tears of the Kingdom), Scholar (Breath of the Wild), Mortal Goddess, Warrior (As Sheik), Priestess.</p>
+            <p><strong class="fresh-sky">Personality:</strong> Her persona varies across her many incarnations, ranging from a stoic ruler to a spirited adventurer.</p>
+            <p><strong>Tears of the Kingdom:</strong> Anxious, determined, purposeful, protective and self-sacrificing.</p>
+            <p><strong>Breath of the Wild:</strong> Scholarly, stressed, dedicated, curious and resilient.</p>
+            <p><strong>Twilight Princess:</strong> Regal, stoic, matriarchal, wise, selfless.</p>
+            <p><strong>Ocarina of Time:</strong> Prophetic, proactive, guilt-ridden, stoic and strategic.</p>
+            <p><strong class="fresh-sky">Appearance:</strong> Young Hylian girl with a slender, light-skinned body. Usually light blonde hair, though it was red in early official artwork and is a darker shade in Twilight Princess. In Tears of the Kingdom, she is depicted with a short, bob-length hair for the first time. Her eyes are traditionally blue, but depicted as green in the "Wild" timeline (<em>Breath of the Wild</em> and <em>Tears of the Kingdom</em>).</p>
+            <p>She uses a long, medieval-style dress, most often in tones of pink, but sometimes white, blue, or violet. These dresses frequently feature the Hylian Crest. She is almost always seen wearing a tiara (typically set with a red, pink, or blue jewel) and golden jewelry. Her outfits are often accompanied by long gloves, capes, or hooded cloaks.</p>
+            <p><strong class="fresh-sky">Notable Traits:</strong> Divine Wisdom, Supernatural Heritage, Selfless Sacrifice, Adaptive Resourcefulness and Scholarly Curiosity.</p>
+        </div>
+
+        <div class="waifu-carousel">
+            <button class="carousel-btn" id="prevBtn" type="button" aria-label="Previous image">◀</button>
+            <div class="carousel-content">
+                <img id="profile-carousel-image" src="" alt="">
+                <div class="carousel-description">
+                    <h3 id="profile-carousel-title"></h3>
+                    <p id="profile-carousel-text"></p>
+                </div>
+
+                <div class="carousel-slides" aria-hidden="true">
+                    <div class="carousel-slide" data-game="The Legend of Zelda: Ocarina of Time" data-text="Zelda in Ocarina of Time">
+                        <img src="https://i.postimg.cc/1zMbkYbH/Zelda-Oo-T.png" alt="Zelda in Ocarina of Time">
+                    </div>
+
+                    <div class="carousel-slide" data-game="The Legend of Zelda: Twilight Princess" data-text="Zelda in Twilight Princess">
+                        <img src="https://i.postimg.cc/7hZnbvkz/Zelda-TPHD.png" alt="Zelda in Twilight Princess">
+                    </div>
+
+                    <div class="carousel-slide" data-game="The Legend of Zelda: Breath of the Wild" data-text="Zelda in Breath of the Wild">
+                        <img src="https://i.postimg.cc/V6RFYf3X/Zelda-BOTW.png" alt="Zelda in Breath of the Wild">
+                    </div>
+
+                    <div class="carousel-slide" data-game="The Legend of Zelda: Tears of the Kingdom" data-text="Zelda in Tears of the Kingdom">
+                        <img src="https://i.postimg.cc/SRxfj0hn/Zelda-TOTK.png" alt="Zelda in Tears of the Kingdom">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn" id="nextBtn" type="button" aria-label="Next image">▶</button>
+        </div>
+    </section>
+
+    <section class="waifu-story">
+        <h2>Story</h2>
+        <h3>> Ocarina of Time: The Seventh Sage and Architect of Destiny</h3>
+		<p>In this version, Zelda is the "Princess of Destiny" who attempts to prevent Ganondorf's rise after having prophetic visions in her dreams. After the villain takes over Hyrule, she assumes the identity of Sheik, disguising herself as a young Sheikah warrior to guide Link and avoid capture while awaiting the hero's return. As the seventh Sage and leader of all other sages, she is essential in sealing Ganon in the Sacred Realm. At the end, she decides to send Link back to his childhood to regain his lost years, an act that ultimately splits the series' timeline</p>
+
+        <h3>> Twilight Princess: The Stoic and Sacrificed Ruler</h3>
+        <p>Zelda is portrayed as the matriarch and sovereign ruler of Hyrule who is forced to surrender to Zant to prevent the slaughter of her people. Unlike other inhabitants, she remains in physical form even under the influence of the Twilight, possibly protected by the Triforce of Wisdom. She demonstrates immense altruism by sacrificing her own life essence to heal Midna, who was on the verge of death. In the final battle, after her body is briefly possessed by Ganondorf, she fights alongside Link on horseback, using Light Arrows to weaken the King of Evil.</p>
+
+        <h3>> Breath of the Wild: The Scholar and Guardian of the Seal</h3>
+        <p>Breath of the Wild: The Scholar and Guardian of the Seal In this timeline, Zelda is a princess with an inclination for science and academic research, dedicating herself to the study of ancient technology such as Guardians and Divine Beasts. She suffers for years under the pressure from her father and the kingdom to awaken her sacred sealing powers, which she only manages to do at the last moment to save Link's life. After the fall of Hyrule, she spends 100 years in a battle of wills inside the castle, keeping Calamity Ganon contained until Link awakens from his regenerative sleep.</p>
+
+        <h3>  Tears of the Kingdom: The Sage of Time and the Light Dragon</h3>
+        <p>Zelda takes on a role of eternal sacrifice when she is transported to the remote past, in the era of Hyrule's foundation, where she becomes the Sage of Time and learns from the first monarchs, Rauru and Sonia. Upon discovering that the Master Sword was damaged, she decides to undergo the forbidden act of draconification, ingesting her secret stone to become the Light Dragon. In this immortal form without human consciousness, she flies over the skies of Hyrule for millennia, bathing the sacred sword in her light to restore the blade's power and deliver it to Link in the future</p>
+    </section>
+
+    <section class="waifu-gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div>
+                <img src="https://i.postimg.cc/rmGHcZdz/Zelda-Oo-T-artwork.png" alt="Artwork of Zelda in Ocarina of Time">
+                <p>Artwork of Zelda in Ocarina of Time</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/nzKWZSsz/Zelda-Oo-T-Closer-Look.jpg" alt="Zelda in Ocarina of Time">
+                <p>The Princess of Hyrule (and of my heart) arrives!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/W3myjYD4/Zelda-Oo-T-ingame.jpg" alt="Zelda playing an ocarina">
+                <p>I didn't know she could play the ocarina!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/WpB8pcL2/Zelda-TP-Better-Look.jpg" alt="Zelda in Twilight Princess">
+                <p>The Princess (I dare to say, my queen) in Twilight Princess!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/hPR8W8Tm/Zelda-TP-Side-View.jpg" alt="Side view of Zelda in Twilight Princess">
+                <p>Such beauty can only be described as divine!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/cLrLF2CH/Zelda-TP-Along-With-Link.jpg" alt="Zelda along with Link in Twilight Princess">
+                <p>Seems like they are discussing something, don't you think?</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/VLgKKbtK/Zelda-BOTW-Closer-Look.png" alt="A closer look on Zelda in Breath of the Wild">
+                <p>The beauty of a true princess</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/5NgssFzg/Zelda-BOTW-Another-Closer-Look.jpg" alt="Another closer look on Zelda in Breath of the Wild">
+                <p>The most beautiful gem of Hyrule</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/kXsTTtS1/Zelda-BOTW-Embarassed.png" alt="Another closer look on Zelda in Breath of the Wild">
+                <p>She looks a bit embarassed, I suppose. Still, very cute!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/dVxPSfCN/Zelda-TOTK-Best-Girl.jpg" alt="Zelda in Tears of the Kingdom">
+                <p>Oh, look. It's Zelda again! Oh my, she's so beautiful I would ask her on date!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/B6dv961N/Zelda-TOTK-Holding-The-Hylian-Sword.jpg" alt="Zelda with the Hylian Sword">
+                <p>Zelda with the Hylian Sword</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/CdppJnf5/Zelda-TOTK-Hylian-Sword.jpg" alt="Zelda with the Hylian Sword">
+                <p>Another photo of Zelda with the Hylian Sword</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/ZKmTrXP2/Zelda-TOTK-Dragon-Form.jpg" alt="Zelda in Dragon Form">
+                <p>In Tears of the Kingdom, she can transform into a dragon! Can we ride her? Wait a second...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="waifu-games">
+        <h2>Games</h2>
+        <div class="games-covers">
+            <div>
+                <img class="game-cover-img" src="https://i.postimg.cc/hGhHq0nH/TLOZ-Ocarina-of-Time.png" alt="The Legend of Zelda: Ocarina of Time Cover" data-steam="#">
+                <p>The Legend of Zelda: Ocarina of Time</p>
+            </div>
+
+            <div>
+                <img class="game-cover-img" src="https://i.postimg.cc/X7YHCQmL/TLOZ-Twilight-Princess.png" alt="The Legend of Zelda: Twilight Princess Cover" data-steam="#">
+                <p>The Legend of Zelda: Twilight Princess</p>
+            </div>
+
+            <div>
+                <img class="game-cover-img" src="https://i.postimg.cc/Kc6XQ0q9/TLOZ-Breath-of-the-Wild.jpg" alt="The Legend of Zelda: Breath of the Wild Cover" data-steam="#">
+                <p>The Legend of Zelda: Breath of the Wild</p>
+            </div>
+
+            <div>
+                <img class="game-cover-img" src="https://i.postimg.cc/c1pqTF9z/TLOZ-Tears-of-the-Kingdom.jpg" alt="The Legend of Zelda: Tears of the Kingdom Cover" data-steam="#">
+                <p>The Legend of Zelda: Tears of the Kingdom</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+	<section class="content-section">
+        <section class="suggestions-section">
+			<p>Add your Waifu here! <a href="../../contact.html">Contact us</a> to submit a character for inclusion in the list.</p>
+		</section>
+		<div class="discord-widget">
+        <div>
+            <h2>Join us on Discord!</h2>
+            <p>Don't be shy! Join our community of retro-gaming today!</p>
+            <p>We sometimes have events and discussions about our favorite games, watch movies, anime and more!</p>
+            <p>Thanks!!!</p>
+        </div>
+        <div>
+            <iframe src="https://discord.com/widget?id=1265509683045859451&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </div>
+	</section>
+    
+
+    <footer>
+        <h2><em>Be water, my friend!</em></h2>
+        <img src="../../images/neocities.png" alt="Neocities logo">
+    </footer>
+
+    <!-- MODAL PARA IMAGENS EXPANDIDAS -->
+    <div id="imageModal" class="image-modal" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Fechar imagem expandida">
+                <span class="close-icon">✕</span>
+            </button>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-description" id="modalDescription"></div>
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

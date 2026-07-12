@@ -221,9 +221,28 @@ function initImageModal(){
   if(!modal) return; // Modal não existe na página
 
   // Função para abrir o modal
-  function openModal(imageSrc, description = ''){
+  function openModal(imageSrc, description = '', title = ''){
     modalImage.src = imageSrc;
-    modalDescription.textContent = description;
+    modalDescription.innerHTML = '';
+
+    if(title){
+      const titleElement = document.createElement('p');
+      titleElement.className = 'modal-game-title';
+      titleElement.textContent = title;
+      modalDescription.appendChild(titleElement);
+    }
+
+    if(description){
+      const descriptionElement = document.createElement('p');
+      descriptionElement.className = 'modal-character-name';
+      descriptionElement.textContent = description;
+      modalDescription.appendChild(descriptionElement);
+    }
+
+    if(!title && !description){
+      modalDescription.textContent = '';
+    }
+
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden'; // Prevent scrolling
@@ -242,8 +261,7 @@ function initImageModal(){
     carouselImage.addEventListener('click', function(){
       const title = document.getElementById('profile-carousel-title').textContent;
       const text = document.getElementById('profile-carousel-text').textContent;
-      const description = title && text ? `${title}\n${text}` : title;
-      openModal(this.src, description);
+      openModal(this.src, text, title);
     });
   }
 
