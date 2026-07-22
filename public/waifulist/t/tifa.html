@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- GOOGLE FONTS SECTION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON SECTION -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+
+    <!-- ICONS SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Tifa Lockhart - Waifu List</title>
+</head>
+<body>
+    <header>
+        <h1>Tifa Lockhart</h1>
+        <p>Words aren't the only thing that tell people what you're thinking</p>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../waifus.html" class="nav-link active">Waifus</a></li>
+                <li><a href="../../credits.html" class="nav-link">Credits</a></li>
+                <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search your Waifu, Games or Animes..." oninput="filtrarWaifus()" autocomplete="off">
+                <div id="searchSuggestions" class="search-suggestions" aria-live="polite"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="waifu-profile">
+        <div class="waifu-info">
+            <h2>Profile</h2>
+            <p><strong class="fresh-sky">Origin:</strong> Final Fantasy 7</p>
+            <p><strong class="fresh-sky">Age:</strong> 20 (Final Fantasy 7), 22 (Final Fantasy: Advent Children), 23 (Dirge of Cerberus -Final Fantasy VII)</p>
+            <p><strong class="fresh-sky">Height:</strong> 167cm (5'6")</p>
+            <p><strong class="fresh-sky">Race:</strong> Human</p>
+            <p><strong class="fresh-sky">Occupation:</strong> Bar hostess, Avalanche member.</p>
+            <p><strong class="fresh-sky">Personality:</strong> Kind, determined, loyal and protective.</p>
+            <p><strong class="fresh-sky">Appearance:</strong> Tifa Lockhart is characterized by her very dark hair, ranging from brown to black, which typically reaches below her waist and is tied at the tips to create a dolphin-tail split. She possesses red eyes, though they are occasionally depicted as brown, and an athletic build with a slender, toned physique and visible abdominals. Her combat-ready appearance often contrasts with her shy personality</p>
+            <p>Her signature attire generally consists of a sleeveless tank top that exposes her midriff, a miniskirt, and a single white teardrop earring on her left ear. In the original Final Fantasy VII, this includes a white tank top, black miniskirt with suspenders, and red and black gloves that extend to her elbows. The Remake version of this outfit adds realistic details like military-inspired suspenders, a black sports bra, and a red-and-black leather vambrace featuring Norse runes.</p>
+            <p><strong>> Other notable physical and clothing details include:</strong>  She bears a scar across her lower chest from Sephiroth’s attack, though this is not shown on-screen. Tifa also has a "Cowgirl Outfit" which is often seen in flashbacks, this "chocobo rancher" look features a short leather skirt, a button-up corset, a white shirt revealing her belly, and a cowboy hat. In <em>Advent Children</em>, she wears a black zip-up vest over a white tank top with black shorts and a pink ribbon on her left arm in remembrance of Aerith. And lastly but not the least important - depending on player choices, she can wear a violet minidress, a black leopard-print cheongsam with "odango" hair buns, or an exotic short black kimono-style dress</p>
+            <p><strong class="fresh-sky">Notable Traits:</strong> Motherly figure, Resilience, Empathic Persona, Deadly Combatant and Moral Compass.</p>
+        </div>
+
+        <div class="waifu-carousel">
+            <button class="carousel-btn" id="prevBtn" type="button" aria-label="Previous image">◀</button>
+            <div class="carousel-content">
+                <img id="profile-carousel-image" src="" alt="">
+                <div class="carousel-description">
+                    <h3 id="profile-carousel-title"></h3>
+                    <p id="profile-carousel-text"></p>
+                </div>
+
+                <div class="carousel-slides" aria-hidden="true">
+                    <div class="carousel-slide" data-game="Final Fantasy VII Remake Intergrade" data-text="Tifa in her iconic outfit from Final Fantasy VII Remake Intergrade, showcasing her athletic build and determined expression.">
+                        <img src="https://i.postimg.cc/JhH5fZth/Tifa-FFVII-Remake.png" alt="Tifa in Final Fantasy VII Remake Intergrade">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn" id="nextBtn" type="button" aria-label="Next image">▶</button>
+        </div>
+    </section>
+
+    <section class="waifu-story">
+        <h2>Story</h2>
+        <h3>> The Roots of a Guardian</h3>
+		<p>Tifa was born in the mountain town of Nibelheim on May 3, 1987. Her childhood was marked by a fragile bond with her neighbor, Cloud Strife; though they were not close initially, their fates became intertwined after the death of Tifa’s mother when she was eight years old. Driven by grief, Tifa attempted to climb Mt. Nibel to find her mother, leading to a near-fatal fall from a bridge that left her in a coma for seven days. During her adolescence, she became the most prized student of the martial arts master Zangan, learning to channel her inner pain into physical discipline. Before Cloud left for Midgar to join SOLDIER, she met him at the town’s water tower, where she made him promise to protect her if she were ever in trouble. This promise became the emotional anchor for her character throughout the series.</p>
+
+        <h3>> Tragedy and the Resistance</h3>
+        <p>The trajectory of Tifa’s life changed forever during the Nibelheim Incident five years before the main story. After Sephiroth went mad and burned her hometown, Tifa found her father murdered at the Nibel Reactor and attempted to strike down Sephiroth herself, only to be severely wounded. Zangan rescued her and took her to Midgar for life-saving surgery. Carrying the weight of her trauma in silence, she eventually opened the bar Seventh Heaven in the Sector 7 slums, which served as both a sanctuary for others and a secret headquarters for the resistance group Avalanche. When she eventually reunited with Cloud, she noticed his memories were inconsistent but recruited him into Avalanche to keep him close and monitor his fragile state. During their early operations, Tifa acted as the "voice of reason", often feeling deep guilt over the reactor bombings and the innocent lives lost.</p>
+
+        <h3>> The Global Pursuit and Silent Doubt</h3>
+        <p>Following the destruction of the Sector 7 plate and the rescue of Aerith from Shinra HQ, Tifa joined the party in their worldwide hunt for Sephiroth. Throughout this journey, she remained a stabilizing force, acting as a motherly figure who provided emotional grounding for her allies. However, she struggled with a "silent strength," choosing not to confront Cloud about his fractured identity even when his version of the Nibelheim tragedy contradicted her own. She doubted her own recollections and feared that exposing the truth would cause Cloud to collapse entirely. This tension reached a breaking point when Sephiroth successfully manipulated Cloud into relinquishing the Black Materia, leading to the awakening of the Weapons and the impending threat of Meteor.</p>
+
+        <h3>> Restoration in the Lifestream</h3>
+        <p>After Cloud went missing and the party was captured by Shinra, Tifa narrowly escaped public execution in Junon. She eventually discovered a catatonic Cloud in Mideel, suffering from severe mako poisoning. When an earthquake sent both of them into the Lifestream, Tifa was finally able to enter Cloud’s subconscious. In this surreal landscape, she used her truest power—her devotion and shared history—to piece his shattered identity back together, revealing that he had indeed been in Nibelheim during the incident as an infantryman. This act of emotional healing allowed the team to reunite with a sense of purpose, leading them to the Northern Cave for the final battle to vanquish Sephiroth and release the magic of Holy.</p>
+
+        <h3>> A Legacy of Warmth</h3>
+        <p>In the aftermath of Meteor’s defeat, Tifa focused on rebuilding a sense of normalcy in the new city of Edge. She opened a new Seventh Heaven and became a parental figure to Marlene and a young orphan named Denzel, striving to keep her found family together despite Cloud’s subsequent withdrawal into guilt and illness. During the Geostigma crisis, she defended her family from the remnants of Sephiroth, notably engaging in a fierce duel with Loz. Ultimately, Tifa’s story is defined by her transition from a survivor of ash to a "hearth in a world full of storms," proving that her truest strength lies not in her fists, but in her unwavering endurance and kindness.</p>
+    </section>
+
+    <section class="waifu-gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div>
+                <img src="https://i.postimg.cc/HxRDpQ9X/Tifa-Bar-Pose.jpg" alt="Tifa in the Seventh Heaven bar">
+                <p>Tifa leaning in front of the counter</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/xChD0K3W/Tifa-Seventh-Heaven-choice-converted.jpg" alt="Tifa in her iconic outfit from Final Fantasy VII Remake Intergrade">
+                <p>She's offering you a drink!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/QNKZfyXr/Tifa-LiveReaction.jpg" alt="A beautiful view of Tifa Lockhart">
+                <p>What a marvelous view. I wonder what's on her mind!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/LXwKHz3x/Tifa-Cowgirl-Outfit.jpg" alt="Tifa in her cowgirl outfit">
+                <p>Did you know that she's also a Cowgirl?</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/k53M7PwY/Tifa-by-Zubi.jpg" alt="Fan art of Tifa by Zubi">
+                <p>Tifa's beauty is unmatched! Artwork by <a href="https://x.com/zewbee_/status/2074522039910649943" target="_blank" rel="noopener noreferrer">@zewbee_</a></p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/ZRJTyPGM/Tifa-by-Galmesh-Rosewood.jpg" alt="Fan art of Tifa by Galmesh Rosewood">
+                <p>Another stunning piece of art by <a href="https://bsky.app/profile/did:plc:w3j3ii63gkvvc2f566dzjaei/post/3mqbjpvtp422i" target="_blank" rel="noopener noreferrer">Galmesh Rosewood</a></p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/76Xq1G4V/Tifa-by-Nem-Graphics.jpg" alt="Fan art of Tifa by Nem Graphics">
+                <p>She is Chun Li no.1 Rival! Artwork by <a href="https://x.com/Nem_Graphics/status/2079437111208419744" target="_blank" rel="noopener noreferrer">@Nem_Graphics</a></p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/ZqtYJzjD/tifa-by-Crazy02oekaki.jpg" alt="Fan art of Tifa by Crazy02oekaki">
+                <p>With love, Tifa Lockhart! Artwork by <a href="https://x.com/Crazy02oekaki/status/1654038174543515648" target="_blank" rel="noopener noreferrer">@Crazy02oekaki</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="waifu-games">
+        <h2>Games</h2>
+        <div class="games-covers">
+            <div>
+                <a href="https://store.steampowered.com/app/3837340/FINAL_FANTASY_VII/" target="_blank" rel="noopener noreferrer">
+                <img class="game-cover-img" src="https://i.postimg.cc/JzdJx0rz/Final-Fantasy-VII.jpg" alt="Final Fantasy VII Cover" data-steam="#"></a>
+                <p>Final Fantasy VII</p>
+            </div>
+
+            <div>
+                <a href="https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/" target="_blank" rel="noopener noreferrer">
+                <img class="game-cover-img" src="https://i.postimg.cc/nhrLc14n/Final-Fantasy-VII-Remake-Intergrade.jpg" alt="Final Fantasy VII Remake Intergrade Cover" data-steam="#"></a>
+                <p>Final Fantasy VII Remake Intergrade</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+	<section class="content-section">
+        <section class="suggestions-section">
+			<p>Add your Waifu here! <a href="../../contact.html">Contact us</a> to submit a character for inclusion in the list.</p>
+		</section>
+		<div class="discord-widget">
+        <div>
+            <h2>Join us on Discord!</h2>
+            <p>Don't be shy! Join our community of retro-gaming today!</p>
+            <p>We sometimes have events and discussions about our favorite games, watch movies, anime and more!</p>
+            <p>Thanks!!!</p>
+        </div>
+        <div>
+            <iframe src="https://discord.com/widget?id=1265509683045859451&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </div>
+	</section>
+    
+
+    <footer>
+        <h2><em>Be water, my friend!</em></h2>
+        <img src="../../images/neocities.png" alt="Neocities logo">
+    </footer>
+
+    <!-- MODAL PARA IMAGENS EXPANDIDAS -->
+    <div id="imageModal" class="image-modal" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Fechar imagem expandida">
+                <span class="close-icon">✕</span>
+            </button>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-description" id="modalDescription"></div>
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

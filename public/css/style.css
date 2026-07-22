@@ -991,6 +991,7 @@ div.critical-section{
   border-radius: 16px;
   animation: slideUp 0.3s ease;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+  overflow: auto;
 }
 
 #modalImage {
@@ -1009,6 +1010,8 @@ div.critical-section{
   font-size: 1rem;
   line-height: 1.5;
   max-width: 600px;
+  max-height: 22vh;
+  overflow-y: auto;
   word-break: break-word;
 }
 
